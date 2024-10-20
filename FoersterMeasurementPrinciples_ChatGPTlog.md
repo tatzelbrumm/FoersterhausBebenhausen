@@ -3134,7 +3134,7 @@ Let’s rewrite the **Preisach model** using the **tanh** function in place of t
 
 The general idea is to replace the `if()` statements (which behave like step functions) with the following smooth transition formula:
 
-$$\text{smooth\_switch}(x) = \tanh(g \cdot (x - V_{th}))$$
+$$\text{smoothswitch}(x) = \tanh(g \cdot (x - V_{th}))$$
 
 - $g$ is a gain factor that controls the steepness of the transition.
 - $V_{th}$ is the threshold voltage at which the hysteron switches.
