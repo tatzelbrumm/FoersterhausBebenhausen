@@ -1276,8 +1276,8 @@ In conductive materials, acoustic waves can influence the motion of charge carri
 
 When you apply an external electrical signal to the material while it's being bombarded with ultrasonic waves, you get:
 
-- **Frequency Mixing:** The acoustic wave (at frequency \( f_a \)) and the electrical signal (at frequency \( f_e \)) interact. Due to the nonlinear properties of the material, they mix.
-- **New Frequencies Generated:** The interaction produces signals at frequencies \( f_a + f_e \) and \( |f_a - f_e| \). This is the heterodyning effect.
+- **Frequency Mixing:** The acoustic wave (at frequency $f_a$) and the electrical signal (at frequency $f_e$) interact. Due to the nonlinear properties of the material, they mix.
+- **New Frequencies Generated:** The interaction produces signals at frequencies $f_a + f_e$ and $|f_a - f_e|$. This is the heterodyning effect.
 - **Enhanced Detection:** These new frequencies can be more easily isolated and measured, improving the sensitivity and resolution of detection.
 
 ---
@@ -1311,8 +1311,8 @@ Bob Pease was all about understanding the fundamentals and applying them cleverl
 
 1. **Setup:**
 
-   - **Ultrasound Transducer:** Generates ultrasonic waves at a frequency \( f_a \).
-   - **Electrodes:** Apply an external electrical signal at frequency \( f_e \) to the material.
+   - **Ultrasound Transducer:** Generates ultrasonic waves at a frequency $f_a$.
+   - **Electrodes:** Apply an external electrical signal at frequency $f_e$ to the material.
    - **Detection Circuitry:** Measures the electrical signals resulting from the interaction.
 
 2. **Signal Interaction:**
@@ -1323,7 +1323,7 @@ Bob Pease was all about understanding the fundamentals and applying them cleverl
 
 3. **Signal Extraction:**
 
-   - The detection circuitry is tuned to the heterodyned frequencies (\( f_a + f_e \) and \( |f_a - f_e| \)).
+   - The detection circuitry is tuned to the heterodyned frequencies ($f_a + f_e$ and $|f_a - f_e|$).
    - By focusing on these frequencies, the system can detect minute changes that are otherwise lost in noise.
 
 ---
@@ -1399,47 +1399,39 @@ The forward problem computes the electrical potential distribution given a known
 
 - **Governing Equation:**
 
-  The electrical potential \( u(\mathbf{r}) \) within a conductive domain \( \Omega \) satisfies the **elliptic partial differential equation (PDE)**:
+  The electrical potential $u(\mathbf{r})$ within a conductive domain $\Omega$ satisfies the **elliptic partial differential equation (PDE)**:
 
-  \[
-  \nabla \cdot (\sigma(\mathbf{r}) \nabla u(\mathbf{r})) = 0, \quad \mathbf{r} \in \Omega
-  \]
+  $$\nabla \cdot (\sigma(\mathbf{r}) \nabla u(\mathbf{r})) = 0, \quad \mathbf{r} \in \Omega$$
 
   where:
-  - \( \sigma(\mathbf{r}) \) is the electrical conductivity at position \( \mathbf{r} \).
-  - \( u(\mathbf{r}) \) is the electric potential.
+  - $\sigma(\mathbf{r})$ is the electrical conductivity at position $\mathbf{r}$.
+  - $u(\mathbf{r})$ is the electric potential.
 
 - **Boundary Conditions:**
 
-  On the boundary \( \partial\Omega \), we have:
+  On the boundary $\partial\Omega$, we have:
 
   - **Dirichlet Boundary Condition:**
 
     The potential is specified where electrodes inject current:
 
-    \[
-    u(\mathbf{r}) = V_k, \quad \mathbf{r} \in \text{Electrode } k
-    \]
+    $$u(\mathbf{r}) = V_k, \quad \mathbf{r} \in \text{Electrode } k$$
 
   - **Neumann Boundary Condition:**
 
     The normal component of the current density is specified elsewhere:
 
-    \[
-    \sigma(\mathbf{r}) \frac{\partial u}{\partial n} = 0, \quad \mathbf{r} \in \partial\Omega \setminus \bigcup_k \text{Electrode } k
-    \]
+    $$\sigma(\mathbf{r}) \frac{\partial u}{\partial n} = 0, \quad \mathbf{r} \in \partial\Omega \setminus \bigcup_k \text{Electrode } k$$
 
 #### **b. Inverse Problem**
 
-The inverse problem aims to reconstruct \( \sigma(\mathbf{r}) \) from measurements of \( u(\mathbf{r}) \) on the boundary.
+The inverse problem aims to reconstruct $\sigma(\mathbf{r})$ from measurements of $u(\mathbf{r})$ on the boundary.
 
 - **Objective:**
 
-  Find the conductivity distribution \( \sigma(\mathbf{r}) \) such that the computed boundary voltages match the measured voltages:
+  Find the conductivity distribution $\sigma(\mathbf{r})$ such that the computed boundary voltages match the measured voltages:
 
-  \[
-  \text{Find } \sigma(\mathbf{r}) \text{ such that } u_{\text{computed}}(\mathbf{r}) \approx u_{\text{measured}}(\mathbf{r}), \quad \mathbf{r} \in \partial\Omega
-  \]
+  $$\text{Find } \sigma(\mathbf{r}) \text{ such that } u_{\text{computed}}(\mathbf{r}) \approx u_{\text{measured}}(\mathbf{r}), \quad \mathbf{r} \in \partial\Omega$$
 
 - **Challenges:**
 
@@ -1450,19 +1442,17 @@ The inverse problem aims to reconstruct \( \sigma(\mathbf{r}) \) from measuremen
 
 #### **Linearization**
 
-- For small perturbations in conductivity \( \delta\sigma \), the relationship between \( \delta\sigma \) and the resulting change in voltage \( \delta V \) can be approximated linearly.
+- For small perturbations in conductivity $\delta\sigma$, the relationship between $\delta\sigma$ and the resulting change in voltage $\delta V$ can be approximated linearly.
 
 #### **Regularization Techniques**
 
 - To mitigate the ill-posedness, regularization methods like **Tikhonov regularization** are employed:
 
-  \[
-  \min_{\sigma} \left\{ \| u_{\text{computed}} - u_{\text{measured}} \|^2 + \lambda \| L(\sigma) \|^2 \right\}
-  \]
+  $$\min_{\sigma} \left( \| u_{\text{computed}} - u_{\text{measured}} \|^2 + \lambda \| L(\sigma) \|^2 \right)$$
 
   where:
-  - \( \lambda \) is the regularization parameter.
-  - \( L \) is a regularization operator (e.g., identity or derivative).
+  - $\lambda$ is the regularization parameter.
+  - $L$ is a regularization operator (e.g., identity or derivative).
 
 #### **Iterative Algorithms**
 
@@ -1482,15 +1472,13 @@ The acoustoelectric effect refers to the interaction between acoustic waves and 
 
 - **Mathematical Representation:**
 
-  The modulated conductivity \( \sigma(\mathbf{r}, t) \) can be expressed as:
+  The modulated conductivity $\sigma(\mathbf{r}, t)$ can be expressed as:
 
-  \[
-  \sigma(\mathbf{r}, t) = \sigma_0(\mathbf{r}) + \delta\sigma(\mathbf{r}, t)
-  \]
+  $$\sigma(\mathbf{r}, t) = \sigma_0(\mathbf{r}) + \delta\sigma(\mathbf{r}, t)$$
 
   where:
-  - \( \sigma_0(\mathbf{r}) \) is the baseline conductivity.
-  - \( \delta\sigma(\mathbf{r}, t) \) is the time-varying change due to the acoustic wave.
+  - $\sigma_0(\mathbf{r})$ is the baseline conductivity.
+  - $\delta\sigma(\mathbf{r}, t)$ is the time-varying change due to the acoustic wave.
 
 ### **Heterodyning in EIT**
 
@@ -1498,27 +1486,25 @@ Heterodyning involves mixing two frequencies to produce new frequencies (sum and
 
 - **Applied Currents:**
 
-  A constant (or slowly varying) electrical current \( I_e \) is injected into the tissue.
+  A constant (or slowly varying) electrical current $I_e$ is injected into the tissue.
 
 - **Ultrasonic Wave:**
 
-  An ultrasonic wave with frequency \( f_a \) propagates through the tissue.
+  An ultrasonic wave with frequency $f_a$ propagates through the tissue.
 
 - **Signal Mixing:**
 
-  The interaction between \( I_e \) and the modulated conductivity \( \delta\sigma(\mathbf{r}, t) \) generates electrical signals at new frequencies.
+  The interaction between $I_e$ and the modulated conductivity $\delta\sigma(\mathbf{r}, t)$ generates electrical signals at new frequencies.
 
 - **Resulting Voltage Signal:**
 
-  The measured voltage \( V(t) \) on the electrodes includes components at frequencies:
+  The measured voltage $V(t)$ on the electrodes includes components at frequencies:
 
-  \[
-  V(t) = V_0 + V_{\text{ae}} \cos(2\pi f_a t)
-  \]
+  $$V(t) = V_0 + V_{\text{ae}} \cos(2\pi f_a t)$$
 
   where:
-  - \( V_0 \) is the baseline voltage.
-  - \( V_{\text{ae}} \) is the amplitude of the acoustoelectric signal.
+  - $V_0$ is the baseline voltage.
+  - $V_{\text{ae}}$ is the amplitude of the acoustoelectric signal.
 
 ### **Mathematical Model of Heterodyning**
 
@@ -1526,19 +1512,15 @@ Heterodyning involves mixing two frequencies to produce new frequencies (sum and
 
   The modulation of the electrical potential due to the acoustoelectric effect can be modeled as:
 
-  \[
-  u(\mathbf{r}, t) = u_0(\mathbf{r}) + \delta u(\mathbf{r}, t)
-  \]
+  $$u(\mathbf{r}, t) = u_0(\mathbf{r}) + \delta u(\mathbf{r}, t)$$
 
-  where \( \delta u(\mathbf{r}, t) \) is related to \( \delta\sigma(\mathbf{r}, t) \).
+  where $\delta u(\mathbf{r}, t)$ is related to $\delta\sigma(\mathbf{r}, t)$.
 
 - **Extraction of Acoustoelectric Signal:**
 
-  By demodulating the measured voltage at the acoustic frequency \( f_a \), the acoustoelectric signal can be isolated:
+  By demodulating the measured voltage at the acoustic frequency $f_a$, the acoustoelectric signal can be isolated:
 
-  \[
-  V_{\text{ae}} = \text{Demodulate}[V(t), f_a]
-  \]
+  $$V_{\text{ae}} = \text{Demodulate}[V(t), f_a]$$
 
 ---
 
@@ -1552,23 +1534,19 @@ Traditional reconstruction algorithms for EIT are computationally intensive and 
 
 - **Training Data:**
 
-  Simulated or experimentally obtained pairs of conductivity distributions \( \sigma(\mathbf{r}) \) and corresponding boundary voltages \( u(\mathbf{r}) \).
+  Simulated or experimentally obtained pairs of conductivity distributions $\sigma(\mathbf{r})$ and corresponding boundary voltages $u(\mathbf{r})$.
 
 - **Network Architecture:**
 
-  A deep neural network \( \mathcal{N}_{\theta} \) parameterized by weights \( \theta \) is used to approximate the inverse mapping:
+  A deep neural network $\mathcal{N}_{\theta}$ parameterized by weights $\theta$ is used to approximate the inverse mapping:
 
-  \[
-  \sigma_{\text{predicted}} = \mathcal{N}_{\theta}(u_{\text{measured}})
-  \]
+  $$\sigma_\text{predicted} = \mathcal{N_\theta}(u_{\text{measured}})$$
 
 - **Loss Function:**
 
   The network is trained to minimize the difference between the predicted and true conductivities:
 
-  \[
-  L(\theta) = \frac{1}{N} \sum_{i=1}^N \| \sigma_{\text{predicted}}^{(i)} - \sigma_{\text{true}}^{(i)} \|^2
-  \]
+  $$L(\theta) = \frac{1}{N} \sum_{i=1}^N \| \sigma_{\text{predicted}}^{(i)} - \sigma_{\text{true}}^{(i)} \|^2$$
 
 - **Advantages:**
 
@@ -1585,13 +1563,11 @@ Neural activity causes localized changes in conductivity due to ion channel dyna
 
 - **Conductivity Change:**
 
-  \[
-  \delta\sigma_{\text{neural}}(\mathbf{r}, t) = \sigma_{\text{rest}}(\mathbf{r}) + \Delta\sigma(\mathbf{r}, t)
-  \]
+  $$\delta\sigma_{\text{neural}}(\mathbf{r}, t) = \sigma_{\text{rest}}(\mathbf{r}) + \Delta\sigma(\mathbf{r}, t)$$
 
 - **Acoustoelectric Modulation:**
 
-  The ultrasonic wave enhances the detectability of \( \Delta\sigma(\mathbf{r}, t) \) through heterodyning.
+  The ultrasonic wave enhances the detectability of $\Delta\sigma(\mathbf{r}, t) $ through heterodyning.
 
 ### **Imaging Process**
 
@@ -1616,27 +1592,19 @@ Neural activity causes localized changes in conductivity due to ion channel dyna
 
 - **Elliptic PDE for Electric Potential:**
 
-  \[
-  \nabla \cdot (\sigma(\mathbf{r}) \nabla u(\mathbf{r})) = 0
-  \]
+  $$\nabla \cdot (\sigma(\mathbf{r}) \nabla u(\mathbf{r})) = 0$$
 
 - **Conductivity Modulation:**
 
-  \[
-  \sigma(\mathbf{r}, t) = \sigma_0(\mathbf{r}) + \delta\sigma(\mathbf{r}, t)
-  \]
+  $$\sigma(\mathbf{r}, t) = \sigma_0(\mathbf{r}) + \delta\sigma(\mathbf{r}, t)$$
 
 - **Voltage Measurement Including Acoustoelectric Effect:**
 
-  \[
-  V(t) = V_0 + V_{\text{ae}} \cos(2\pi f_a t)
-  \]
+  $$V(t) = V_0 + V_{\text{ae}} \cos(2\pi f_a t)$$
 
 - **Neural Network Inverse Mapping:**
 
-  \[
-  \sigma_{\text{predicted}} = \mathcal{N}_{\theta}(u_{\text{measured}})
-  \]
+  $$\sigma_\text{predicted} = \mathcal{N_\theta}(u_{\text{measured}})$$
 
 ---
 
