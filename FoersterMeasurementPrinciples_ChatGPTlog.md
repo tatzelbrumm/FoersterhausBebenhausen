@@ -2614,11 +2614,11 @@ Das Messprinzip umfasst die Verwendung hochempfindlicher Fluxgate-Sensoren zur E
 
 **Wenn Sie weitere Fragen haben oder zusätzliche Informationen benötigen, stehe ich Ihnen gerne zur Verfügung!**
 
-** You: **
+## You: ##
 
 Welche Geräte von FOERSTER haben GPS-Module eingebaut, und wer ist deren OEM?
 
-** ChatGPT **
+## ChatGPT: ##
 
 **Antwort:**
 
