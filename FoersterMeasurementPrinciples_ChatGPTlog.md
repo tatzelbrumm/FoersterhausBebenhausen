@@ -157,8 +157,8 @@ The "Low-Cost Non-Invasive Biomedical Imaging" talk at 34C3 likely served as an 
 
 ## You: ## 
 
-A birthday girl who just turns 82 once said:
-"Creativity is combining facts no one else has connected before".
+[A birthday girl](https://x.com/Tatzelbrumm/status/1724595270099374207) who just turns 82 once said:
+"Creativity is combining facts [no one else has connected before](https://x.com/Tatzelbrumm/status/1847916319984726062)".
 How could I creatively combine the 34C3 talk ([that I simultaneously translated](https://www.youtube.com/watch?v=SaBIgB7qf2g&t=21s)) with Institut Dr. Foerster techniques in ways no one else has connected before?
 
 Certainly! Combining the insights from the **34C3 talk on low-cost non-invasive biomedical imaging** with the **Institut Dr. Foerster's non-destructive testing (NDT) techniques** opens up a realm of innovative possibilities. By bridging these two domains, you can pioneer novel applications that benefit both industrial and medical fields. Here’s how you could creatively connect these areas in ways that may not have been considered before:
