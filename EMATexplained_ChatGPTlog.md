@@ -16,22 +16,20 @@ An Electromagnetic Acoustic Transducer (EMAT) generates and detects ultrasonic w
 
 When generating ultrasonic waves, the EMAT creates mechanical vibrations in the material via the Lorentz force. The key equations and principles involved are:
  
-1. **Eddy Current Induction:** An alternating current $$I(t)$$ in the EMAT coil generates a time-varying magnetic field $$\mathbf{B}_{\text{coil}}(t)$$, which induces eddy currents $$\mathbf{J}(\mathbf{r}, t)$$ in the conductive material according to Faraday's Law:$$
- \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} 
-$$
+1. **Eddy Current Induction:** An alternating current $$I(t)$$ in the EMAT coil generates a time-varying magnetic field
+$$\mathbf{B}_{\text{coil}}(t)$$, which induces eddy currents $$\mathbf{J}(\mathbf{r}, t)$$ in the conductive material according to Faraday's Law:
+$$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$$
+
 Where $$\mathbf{E}$$ is the induced electric field, and $$\mathbf{B}$$ is the magnetic flux density.
  
-2. **Lorentz Force Generation:** The interaction between the induced eddy currents $$\mathbf{J}$$ and a static magnetic field $$\mathbf{B}_{\text{static}}$$ (from a permanent magnet) produces a Lorentz force density $$\mathbf{F}$$:$$
- \mathbf{F} = \mathbf{J} \times \mathbf{B}_{\text{static}} 
-$$
+2. **Lorentz Force Generation:** The interaction between the induced eddy currents $$\mathbf{J}$$ and a static magnetic field $$\mathbf{B}_{\text{static}}$$ (from a permanent magnet) produces a Lorentz force density $$\mathbf{F}$$:
+$$\mathbf{F} = \mathbf{J} \times \mathbf{B}_{\text{static}}$$
 
 This force acts on the charge carriers in the material, causing mechanical vibrations that generate ultrasonic waves.
  
 3. **Wave Equation:** 
 The generated mechanical stress leads to acoustic wave propagation described by the elastic wave equation:
-$$
- \rho \frac{\partial^2 \mathbf{u}}{\partial t^2} = \nabla \cdot \boldsymbol{\sigma} + \mathbf{F} 
-$$
+$$\rho \frac{\partial^2 \mathbf{u}}{\partial t^2} = \nabla \cdot \boldsymbol{\sigma} + \mathbf{F}$$
 
 Where:
  
@@ -47,14 +45,12 @@ When receiving ultrasonic waves, the EMAT detects the mechanical vibrations of t
  
 1. **Material Vibration:** Ultrasonic waves in the material cause periodic displacements $$\mathbf{u}(\mathbf{r}, t)$$ of the conductive medium.
  
-2. **Change in Magnetic Flux:** The motion of the conductive material in the static magnetic field $$\mathbf{B}_{\text{static}}$$ changes the magnetic flux $$\Phi(t)$$ linking the EMAT coil:$$
- \Phi(t) = \int_{\mathcal{A}} \mathbf{B}_{\text{static}} \cdot d\mathbf{A}(t) 
-$$
+2. **Change in Magnetic Flux:** The motion of the conductive material in the static magnetic field $$\mathbf{B}_{\text{static}}$$ changes the magnetic flux $$\Phi(t)$$ linking the EMAT coil:
+$$\Phi(t) = \int_{\mathcal{A}} \mathbf{B}_{\text{static}} \cdot d\mathbf{A}(t)$$
 Where $$\mathcal{A}$$ is the area enclosed by the coil.
  
-3. **Induced Electromotive Force:** According to Faraday's Law, the time-varying flux induces an electromotive force (emf) $$\mathcal{E}(t)$$ in the coil:$$
- \mathcal{E}(t) = -\frac{d\Phi(t)}{dt} 
-$$
+3. **Induced Electromotive Force:** According to Faraday's Law, the time-varying flux induces an electromotive force (emf) $$\mathcal{E}(t)$$ in the coil:
+$$\mathcal{E}(t) = -\frac{d\Phi(t)}{dt}$$
 
 This emf is proportional to the velocity of the material's surface due to the ultrasonic wave.
 
@@ -66,21 +62,17 @@ This emf is proportional to the velocity of the material's surface due to the ul
 
 ## Summary of Key Equations 
  
-- **Lorentz Force Density:** $$
- \mathbf{F} = \mathbf{J} \times \mathbf{B}_{\text{static}} 
-$$
+- **Lorentz Force Density:**
+$$\mathbf{F} = \mathbf{J} \times \mathbf{B}_{\text{static}}$$
  
-- **Induced Eddy Currents:** $$
- \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}_{\text{coil}}}{\partial t} 
-$$
+- **Induced Eddy Currents:**
+$$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}_{\text{coil}}}{\partial t}$$
  
-- **Elastic Wave Equation:** $$
- \rho \frac{\partial^2 \mathbf{u}}{\partial t^2} = \nabla \cdot \boldsymbol{\sigma} + \mathbf{F} 
-$$
+- **Elastic Wave Equation:**
+$$\rho \frac{\partial^2 \mathbf{u}}{\partial t^2} = \nabla \cdot \boldsymbol{\sigma} + \mathbf{F}$$
  
-- **Induced Emf in Reception:** $$
- \mathcal{E}(t) = -\frac{d}{dt} \int_{\mathcal{A}} \mathbf{B}_{\text{static}} \cdot d\mathbf{A}(t) 
-$$
+- **Induced Emf in Reception:**
+$$\mathcal{E}(t) = -\frac{d}{dt} \int_{\mathcal{A}} \mathbf{B}_{\text{static}} \cdot d\mathbf{A}(t)$$
 
 ## Conclusion 
 
@@ -93,28 +85,27 @@ Don't you need to consider (anisotropic, complex?) Ohm's Law to compute the curr
 
 ChatGPT: 
 
-Thought for 23 secondsYou're absolutely correct, and thank you for pointing that out. The expression for induced eddy currents in my previous explanation was oversimplified. To accurately compute the current density $$\mathbf{J}$$ induced by the electric field $$\mathbf{E}$$, we need to apply Ohm's Law. If the material is anisotropic, the conductivity $$\boldsymbol{\sigma}$$ becomes a tensor, and Ohm's Law must reflect that. Let's refine the explanation accordingly.
+Thought for 23 seconds
+
+You're absolutely correct, and thank you for pointing that out. The expression for induced eddy currents in my previous explanation was oversimplified. To accurately compute the current density $$\mathbf{J}$$ induced by the electric field $$\mathbf{E}$$, we need to apply Ohm's Law. If the material is anisotropic, the conductivity $$\boldsymbol{\sigma}$$ becomes a tensor, and Ohm's Law must reflect that. Let's refine the explanation accordingly.
 ## Detailed Explanation of Induced Eddy Currents 
 
 ### 1. Induced Electric Field 
-An alternating current $$I(t)$$ in the EMAT coil produces a time-varying magnetic field $$\mathbf{B}_{\text{coil}}(t)$$. According to **Faraday's Law** , this changing magnetic field induces an electric field $$\mathbf{E}(\mathbf{r}, t)$$ in the conductive material:$$
- \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}_{\text{coil}}}{\partial t} 
-$$
+An alternating current $$I(t)$$ in the EMAT coil produces a time-varying magnetic field $$\mathbf{B}_{\text{coil}}(t)$$. According to **Faraday's Law** , this changing magnetic field induces an electric field $$\mathbf{E}(\mathbf{r}, t)$$ in the conductive material:
+$$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}_{\text{coil}}}{\partial t}$$
 
 ### 2. Ohm's Law and Current Density 
 **Ohm's Law**  relates the induced electric field $$\mathbf{E}$$ to the current density $$\mathbf{J}$$: 
-- **For isotropic materials**  (scalar conductivity $$\sigma$$):$$
- \mathbf{J} = \sigma \mathbf{E} 
-$$
+- **For isotropic materials**  (scalar conductivity $$\sigma$$):
+$$\mathbf{J} = \sigma \mathbf{E}$$
  
-- **For anisotropic materials**  (conductivity tensor $$\boldsymbol{\sigma}$$):$$
- \mathbf{J} = \boldsymbol{\sigma} \cdot \mathbf{E} 
-$$
+- **For anisotropic materials**  (conductivity tensor $$\boldsymbol{\sigma}$$):
+$$\mathbf{J} = \boldsymbol{\sigma} \cdot \mathbf{E}$$
+
 Here, $$\boldsymbol{\sigma}$$ is a second-rank tensor representing the directional dependence of the material's conductivity.
 ### 3. Complete Expression for Induced Current Density 
-Combining Faraday's Law and Ohm's Law, the induced current density $$\mathbf{J}$$ can be expressed as:$$
- \mathbf{J} = -\boldsymbol{\sigma} \cdot \frac{\partial \mathbf{A}}{\partial t} 
-$$
+Combining Faraday's Law and Ohm's Law, the induced current density $$\mathbf{J}$$ can be expressed as:
+$$\mathbf{J} = -\boldsymbol{\sigma} \cdot \frac{\partial \mathbf{A}}{\partial t}$$
 
 Where:
  
@@ -123,9 +114,8 @@ Where:
 - We assume the electric scalar potential $$\phi$$ is negligible in the conductive material for high-frequency applications.
 
 ### 4. Accounting for Skin Effect 
-At high frequencies, the **skin effect**  causes the induced currents to be confined near the surface of the conductor. The penetration depth $$\delta$$ is given by:$$
- \delta = \sqrt{\frac{2}{\mu \sigma \omega}} 
-$$
+At high frequencies, the **skin effect**  causes the induced currents to be confined near the surface of the conductor. The penetration depth $$\delta$$ is given by:
+$$\delta = \sqrt{\frac{2}{\mu \sigma \omega}}$$
 
 Where:
  
@@ -136,33 +126,27 @@ Where:
 - $$\omega$$ is the angular frequency of the alternating current.
 
 ### 5. Lorentz Force with Accurate Current Density 
-The **Lorentz force density**  $$\mathbf{F}$$ acting on the material is then calculated using the accurate current density:$$
- \mathbf{F} = \mathbf{J} \times \mathbf{B}_{\text{static}} 
-$$
+The **Lorentz force density**  $$\mathbf{F}$$ acting on the material is then calculated using the accurate current density:
+$$\mathbf{F} = \mathbf{J} \times \mathbf{B}_{\text{static}}$$
 
 This force generates mechanical vibrations in the material, initiating ultrasonic waves.
 
 ## Updated Equations Summary 
  
-- **Faraday's Law:** $$
- \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}_{\text{coil}}}{\partial t} 
-$$
+- **Faraday's Law:**
+$$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}_{\text{coil}}}{\partial t}$$
  
-- **Ohm's Law (Anisotropic Conductivity):** $$
- \mathbf{J} = \boldsymbol{\sigma} \cdot \mathbf{E} 
-$$
+- **Ohm's Law (Anisotropic Conductivity):**
+$$\mathbf{J} = \boldsymbol{\sigma} \cdot \mathbf{E}$$
  
-- **Induced Current Density:** $$
- \mathbf{J} = -\boldsymbol{\sigma} \cdot \frac{\partial \mathbf{A}}{\partial t} 
-$$
+- **Induced Current Density:**
+$$\mathbf{J} = -\boldsymbol{\sigma} \cdot \frac{\partial \mathbf{A}}{\partial t}$$
  
-- **Lorentz Force Density:** $$
- \mathbf{F} = \mathbf{J} \times \mathbf{B}_{\text{static}} 
-$$
+- **Lorentz Force Density:**
+$$\mathbf{F} = \mathbf{J} \times \mathbf{B}_{\text{static}}$$
  
-- **Elastic Wave Equation with Lorentz Force:** $$
- \rho \frac{\partial^2 \mathbf{u}}{\partial t^2} = \nabla \cdot \boldsymbol{\tau} + \mathbf{F} 
-$$
+- **Elastic Wave Equation with Lorentz Force:**
+$$\rho \frac{\partial^2 \mathbf{u}}{\partial t^2} = \nabla \cdot \boldsymbol{\tau} + \mathbf{F}$$
 Where $$\boldsymbol{\tau}$$ is the stress tensor.
 
 ## Considerations for Anisotropic Materials 
@@ -188,9 +172,7 @@ You're absolutely right, and I appreciate your attention to detail. Expanding th
 ## Elastic Wave Equation in Component Form 
 
 The general form of the elastic wave equation, including the Lorentz force, is:
-$$
- \rho \frac{\partial^2 \mathbf{u}}{\partial t^2} = \nabla \cdot \boldsymbol{\sigma} + \mathbf{F} 
-$$
+$$\rho \frac{\partial^2 \mathbf{u}}{\partial t^2} = \nabla \cdot \boldsymbol{\sigma} + \mathbf{F}$$
 
 Where:
  
@@ -205,14 +187,12 @@ Where:
 ### Component Form 
 In Cartesian coordinates $$(x_1, x_2, x_3)$$, we can expand the equation into components. The displacement vector $$\mathbf{u}$$ has components $$u_i$$ (where $$i = 1, 2, 3$$), and the stress tensor $$\boldsymbol{\sigma}$$ has components $$\sigma_{ij}$$.
 The elastic wave equation becomes:
-$$
- \rho \frac{\partial^2 u_i}{\partial t^2} = \frac{\partial \sigma_{ij}}{\partial x_j} + F_i 
-$$
+$$\rho \frac{\partial^2 u_i}{\partial t^2} = \frac{\partial \sigma_{ij}}{\partial x_j} + F_i$$
+
 **Note:**  The Einstein summation convention is used, where repeated indices imply summation over that index.
 ## Stress-Strain Relations 
-The stress $$\sigma_{ij}$$ is related to the strain $$\epsilon_{kl}$$ via the **constitutive relations**  (Hooke's Law for linear elasticity). For anisotropic materials, this relation involves a fourth-order stiffness tensor $$c_{ijkl}$$:$$
- \sigma_{ij} = c_{ijkl} \epsilon_{kl} 
-$$
+The stress $$\sigma_{ij}$$ is related to the strain $$\epsilon_{kl}$$ via the **constitutive relations**  (Hooke's Law for linear elasticity). For anisotropic materials, this relation involves a fourth-order stiffness tensor $$c_{ijkl}$$:
+$$\sigma_{ij} = c_{ijkl} \epsilon_{kl}$$
 
 Where:
  
@@ -221,32 +201,27 @@ Where:
 - $$\epsilon_{kl}$$ is the strain tensor.
 
 ### Strain Tensor Components 
-The strain tensor $$\epsilon_{kl}$$ is defined in terms of the displacement gradients:$$
- \epsilon_{kl} = \frac{1}{2} \left( \frac{\partial u_k}{\partial x_l} + \frac{\partial u_l}{\partial x_k} \right) 
-$$
+The strain tensor $$\epsilon_{kl}$$ is defined in terms of the displacement gradients:
+$$\epsilon_{kl} = \frac{1}{2} \left( \frac{\partial u_k}{\partial x_l} + \frac{\partial u_l}{\partial x_k} \right)$$
 
 ## Complete Expansion of the Elastic Wave Equation 
-Combining these relations, we can write the elastic wave equation entirely in terms of the displacement components $$u_i$$: 
-1. **Express stress in terms of strain:** $$
- \sigma_{ij} = c_{ijkl} \epsilon_{kl} 
-$$
+Combining these relations, we can write the elastic wave equation entirely in terms of the displacement components $$u_i$$:
+
+1. **Express stress in terms of strain:**
+$$\sigma_{ij} = c_{ijkl} \epsilon_{kl}$$
  
-2. **Express strain in terms of displacement gradients:** $$
- \epsilon_{kl} = \frac{1}{2} \left( \frac{\partial u_k}{\partial x_l} + \frac{\partial u_l}{\partial x_k} \right) 
-$$
+2. **Express strain in terms of displacement gradients:**
+$$\epsilon_{kl} = \frac{1}{2} \left( \frac{\partial u_k}{\partial x_l} + \frac{\partial u_l}{\partial x_k} \right)$$
  
-3. **Substitute strain into stress:** $$
- \sigma_{ij} = c_{ijkl} \left( \frac{1}{2} \left( \frac{\partial u_k}{\partial x_l} + \frac{\partial u_l}{\partial x_k} \right) \right) 
-$$
+3. **Substitute strain into stress:**
+$$\sigma_{ij} = c_{ijkl} \left( \frac{1}{2} \left( \frac{\partial u_k}{\partial x_l} + \frac{\partial u_l}{\partial x_k} \right) \right)$$
  
-4. **Substitute stress into the elastic wave equation:** $$
- \rho \frac{\partial^2 u_i}{\partial t^2} = \frac{\partial}{\partial x_j} \left( c_{ijkl} \frac{1}{2} \left( \frac{\partial u_k}{\partial x_l} + \frac{\partial u_l}{\partial x_k} \right) \right) + F_i 
-$$
+4. **Substitute stress into the elastic wave equation:**
+$$\rho \frac{\partial^2 u_i}{\partial t^2} = \frac{\partial}{\partial x_j} \left( c_{ijkl} \frac{1}{2} \left( \frac{\partial u_k}{\partial x_l} + \frac{\partial u_l}{\partial x_k} \right) \right) + F_i$$
 
 ## Simplified Equation for Isotropic Materials 
-For isotropic materials, the stiffness tensor $$c_{ijkl}$$ simplifies due to material symmetry. The constitutive relations become:$$
- \sigma_{ij} = \lambda \delta_{ij} \epsilon_{kk} + 2\mu \epsilon_{ij} 
-$$
+For isotropic materials, the stiffness tensor $$c_{ijkl}$$ simplifies due to material symmetry. The constitutive relations become:
+$$\sigma_{ij} = \lambda \delta_{ij} \epsilon_{kk} + 2\mu \epsilon_{ij}$$
 
 Where:
  
@@ -259,9 +234,7 @@ Where:
 ### Expanded Elastic Wave Equation for Isotropic Materials 
 
 Substituting the isotropic constitutive relations into the elastic wave equation:
-$$
- \rho \frac{\partial^2 u_i}{\partial t^2} = \frac{\partial}{\partial x_j} \left( \lambda \delta_{ij} \epsilon_{kk} + 2\mu \epsilon_{ij} \right) + F_i 
-$$
+$$\rho \frac{\partial^2 u_i}{\partial t^2} = \frac{\partial}{\partial x_j} \left( \lambda \delta_{ij} \epsilon_{kk} + 2\mu \epsilon_{ij} \right) + F_i$$
 
 Further expanding:
 $$
@@ -276,25 +249,20 @@ Substituting the expressions for strain:
 
 Simplify the terms:
  
-1. **First Term:** $$
- \lambda \frac{\partial}{\partial x_i} \epsilon_{kk} = \lambda \frac{\partial}{\partial x_i} \left( \frac{\partial u_k}{\partial x_k} \right) 
-$$
+1. **First Term:**
+$$\lambda \frac{\partial}{\partial x_i} \epsilon_{kk} = \lambda \frac{\partial}{\partial x_i} \left( \frac{\partial u_k}{\partial x_k} \right)$$
  
-2. **Second Term:** $$
- 2\mu \frac{\partial \epsilon_{ij}}{\partial x_j} = 2\mu \frac{\partial}{\partial x_j} \left( \frac{1}{2} \left( \frac{\partial u_i}{\partial x_j} + \frac{\partial u_j}{\partial x_i} \right) \right) = \mu \left( \frac{\partial^2 u_i}{\partial x_j \partial x_j} + \frac{\partial^2 u_j}{\partial x_j \partial x_i} \right) 
-$$
-Since $$\frac{\partial^2 u_j}{\partial x_j \partial x_i} = \frac{\partial^2 u_i}{\partial x_j \partial x_j}$$ (assuming continuous and differentiable functions), this term simplifies to:$$
- 2\mu \frac{\partial \epsilon_{ij}}{\partial x_j} = 2\mu \frac{\partial^2 u_i}{\partial x_j \partial x_j} 
-$$
- 
-3. **Combine Terms:** $$
- \rho \frac{\partial^2 u_i}{\partial t^2} = \lambda \frac{\partial}{\partial x_i} \left( \frac{\partial u_k}{\partial x_k} \right) + 2\mu \frac{\partial^2 u_i}{\partial x_j \partial x_j} + F_i 
-$$
+2. **Second Term:**
+$$2\mu \frac{\partial \epsilon_{ij}}{\partial x_j} = 2\mu \frac{\partial}{\partial x_j} \left( \frac{1}{2} \left( \frac{\partial u_i}{\partial x_j} + \frac{\partial u_j}{\partial x_i} \right) \right) = \mu \left( \frac{\partial^2 u_i}{\partial x_j \partial x_j} + \frac{\partial^2 u_j}{\partial x_j \partial x_i} \right)$$
 
-Or:
-$$
- \rho \frac{\partial^2 u_i}{\partial t^2} = (\lambda + 2\mu) \frac{\partial^2 u_i}{\partial x_j \partial x_j} + \lambda \frac{\partial}{\partial x_i} \left( \frac{\partial u_k}{\partial x_k} - \frac{\partial u_i}{\partial x_i} \right) + F_i 
-$$
+Since $$\frac{\partial^2 u_j}{\partial x_j \partial x_i} = \frac{\partial^2 u_i}{\partial x_j \partial x_j}$$ (assuming continuous and differentiable functions), this term simplifies to:
+$$2\mu \frac{\partial \epsilon_{ij}}{\partial x_j} = 2\mu \frac{\partial^2 u_i}{\partial x_j \partial x_j}$$
+ 
+3. **Combine Terms:**
+$$\rho \frac{\partial^2 u_i}{\partial t^2} = \lambda \frac{\partial}{\partial x_i} \left( \frac{\partial u_k}{\partial x_k} \right) + 2\mu \frac{\partial^2 u_i}{\partial x_j \partial x_j} + F_i$$
+
+Or:  
+$$\rho \frac{\partial^2 u_i}{\partial t^2} = (\lambda + 2\mu) \frac{\partial^2 u_i}{\partial x_j \partial x_j} + \lambda \frac{\partial}{\partial x_i} \left( \frac{\partial u_k}{\partial x_k} - \frac{\partial u_i}{\partial x_i} \right) + F_i$$
 
 However, this simplification is valid only for isotropic and homogeneous materials.
 
@@ -305,27 +273,23 @@ For **anisotropic materials** , the stiffness tensor $$c_{ijkl}$$ cannot be simp
 - **Components:**  The stiffness tensor $$c_{ijkl}$$ has $$3^4 = 81$$ components in three dimensions. However, due to the symmetries in stress and strain tensors and the material's properties, the number of independent components reduces.
  
 - **Symmetry Properties:**  
-  - **Major Symmetry:** $$
- c_{ijkl} = c_{klij} 
-$$
+  - **Major Symmetry:**  
+    $$c_{ijkl} = c_{klij}$$
  
-  - **Minor Symmetry:** $$
- c_{ijkl} = c_{jikl}, \quad c_{ijkl} = c_{ijlk} 
-$$
+  - **Minor Symmetry:**
+    $$c_{ijkl} = c_{jikl}, \quad c_{ijkl} = c_{ijlk}$$
  
 - **Reduced Notation:**  Voigt notation is often used to simplify the representation by mapping the indices $$ij$$ and $$kl$$ to single indices.
 
 ### Constitutive Relations in Anisotropic Materials 
 
 The constitutive relation remains:
-$$
- \sigma_{ij} = c_{ijkl} \epsilon_{kl} 
-$$
+$$\sigma_{ij} = c_{ijkl} \epsilon_{kl}$$
+
 But due to the complexity of $$c_{ijkl}$$, the explicit expansion involves higher-order tensors and is material-specific.
 ## Lorentz Force Components 
-The body force $$F_i$$ in the elastic wave equation is due to the Lorentz force density:$$
- F_i = (\mathbf{J} \times \mathbf{B}_{\text{static}})_i = \epsilon_{ijk} J_j B_{\text{static},k} 
-$$
+The body force $$F_i$$ in the elastic wave equation is due to the Lorentz force density:
+$$F_i = (\mathbf{J} \times \mathbf{B}_{\text{static}})_i = \epsilon_{ijk} J_j B_{\text{static},k}$$
 
 Where:
  
@@ -339,21 +303,17 @@ Where:
 
 Putting it all together, the elastic wave equation in component form for anisotropic materials is:
  
-1. **Wave Equation:** $$
- \rho \frac{\partial^2 u_i}{\partial t^2} = \frac{\partial \sigma_{ij}}{\partial x_j} + F_i 
-$$
+1. **Wave Equation:**
+$$\rho \frac{\partial^2 u_i}{\partial t^2} = \frac{\partial \sigma_{ij}}{\partial x_j} + F_i$$
  
-2. **Stress-Strain Relation:** $$
- \sigma_{ij} = c_{ijkl} \epsilon_{kl} 
-$$
+2. **Stress-Strain Relation:**
+$$\sigma_{ij} = c_{ijkl} \epsilon_{kl}$$
  
-3. **Strain-Displacement Relation:** $$
- \epsilon_{kl} = \frac{1}{2} \left( \frac{\partial u_k}{\partial x_l} + \frac{\partial u_l}{\partial x_k} \right) 
-$$
+3. **Strain-Displacement Relation:**
+$$\epsilon_{kl} = \frac{1}{2} \left( \frac{\partial u_k}{\partial x_l} + \frac{\partial u_l}{\partial x_k} \right)$$
  
-4. **Lorentz Force Components:** $$
- F_i = \epsilon_{ijk} J_j B_{\text{static},k} 
-$$
+4. **Lorentz Force Components:**
+$$F_i = \epsilon_{ijk} J_j B_{\text{static},k}$$
 
 ## Application in EMAT Operation 
 
@@ -366,14 +326,12 @@ In the context of EMATs:
   - The anisotropic properties of the material affect how ultrasonic waves propagate, necessitating the use of the full stiffness tensor $$c_{ijkl}$$.
  
 - **Eddy Currents and Current Density:**  
-  - The induced current density $$J_j$$ depends on the electric field and the material's conductivity tensor $$\sigma_{jk}$$:$$
- J_j = \sigma_{jk} E_k 
-$$
+  - The induced current density $$J_j$$ depends on the electric field and the material's conductivity tensor $$\sigma_{jk}$$:  
+    $$J_j = \sigma_{jk} E_k$$
  
 - **Electric Field from Faraday's Law:**  
-  - The induced electric field $$E_k$$ is related to the time-varying magnetic field:$$
- \nabla \times E_k = -\frac{\partial B_{\text{coil},k}}{\partial t} 
-$$
+  - The induced electric field $$E_k$$ is related to the time-varying magnetic field:
+    $$\nabla \times E_k = -\frac{\partial B_{\text{coil},k}}{\partial t}$$
 
 ## Considerations for Practical Calculations 
  
@@ -394,28 +352,16 @@ By expanding the elastic wave equation into its component form, we capture the i
 ---
 
 **Key Equations Recap:**  
-1. **Elastic Wave Equation:** $$
- \rho \frac{\partial^2 u_i}{\partial t^2} = \frac{\partial \sigma_{ij}}{\partial x_j} + F_i 
-$$
+1. **Elastic Wave Equation:** $$\rho \frac{\partial^2 u_i}{\partial t^2} = \frac{\partial \sigma_{ij}}{\partial x_j} + F_i$$
  
-2. **Stress-Strain Relation (Anisotropic):** $$
- \sigma_{ij} = c_{ijkl} \epsilon_{kl} 
-$$
+2. **Stress-Strain Relation (Anisotropic):** $$\sigma_{ij} = c_{ijkl} \epsilon_{kl}$$
  
-3. **Strain-Displacement Relation:** $$
- \epsilon_{kl} = \frac{1}{2} \left( \frac{\partial u_k}{\partial x_l} + \frac{\partial u_l}{\partial x_k} \right) 
-$$
+3. **Strain-Displacement Relation:** $$\epsilon_{kl} = \frac{1}{2} \left( \frac{\partial u_k}{\partial x_l} + \frac{\partial u_l}{\partial x_k} \right)$$
  
-4. **Lorentz Force Components:** $$
- F_i = \epsilon_{ijk} J_j B_{\text{static},k} 
-$$
+4. **Lorentz Force Components:** $$F_i = \epsilon_{ijk} J_j B_{\text{static},k}$$
  
-5. **Ohm's Law (Anisotropic Conductivity):** $$
- J_j = \sigma_{jk} E_k 
-$$
+5. **Ohm's Law (Anisotropic Conductivity):** $$J_j = \sigma_{jk} E_k$$
  
-6. **Faraday's Law (Electric Field Induction):** $$
- \nabla \times E_k = -\frac{\partial B_{\text{coil},k}}{\partial t} 
-$$
+6. **Faraday's Law (Electric Field Induction):** $$\nabla \times E_k = -\frac{\partial B_{\text{coil},k}}{\partial t}$$
 
 By carefully considering the tensorial nature of the physical quantities involved, we can accurately describe the generation and propagation of ultrasonic waves in materials using EMATs.
