@@ -93,6 +93,8 @@ The Foerster Defectoview HS employs eddy current testing principles to provide r
 what do you know about the talk at the 34th Chaos Communication Congress:  
 https://media.ccc.de/v/34c3-8948-low_cost_non-invasive_biomedical_imaging
 
+## ChatGPT: ##
+
 As of my knowledge cutoff in October 2023, the **34th Chaos Communication Congress (34C3)** took place from December 27 to December 30, 2017, in Leipzig, Germany. One of the talks at this event was titled **"Low-Cost Non-Invasive Biomedical Imaging."**
 
 ### **Overview of the Talk:**
@@ -3630,3 +3632,13 @@ Für detaillierte Informationen können Sie sich direkt an das **Institut Dr. Fo
 
 ### Weiterführende Informationen:
 - [Institut Dr. Foerster: BARPROOF](https://www.foerstergroup.de)
+
+## You: ##
+
+Welche Schlüsse aus der Erwähnung von EMAT in
+[https://www.foerstergroup.de/de/deu/technologie/ultraschallpruefung/](https://www.foerstergroup.de/de/deu/technologie/ultraschallpruefung/)  
+kannst du ziehen oder in den dir zugänglichen Daten finden?
+
+## ChatGPT: ##
+
+**BARPROOF** selbst nutzt **Phased-Array-Ultraschall** für die Prüfung von metallischen Stangenmaterialien, aber das **Institut Dr. Foerster** erwähnt auf seiner Webseite, dass **EMAT** (Electromagnetic Acoustic Transducer) eine alternative Methode zur Erzeugung von Ultraschallwellen darstellt. EMAT unterscheidet sich dadurch, dass kein Kopplungsmedium erforderlich ist, da es Schallwellen direkt im Material mittels elektromagnetischer Induktion erzeugt. Es wird aber nicht explizit erwähnt, dass **BARPROOF** EMAT verwendet, sondern eher piezoelektrische Ultraschallmethoden.
