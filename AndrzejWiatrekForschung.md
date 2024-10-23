@@ -16,7 +16,8 @@ Publikationen?
 
 ChatGPT: 
 
-Searched 3 sites
+*Searched 3 sites*
+
 Andrzej Wiatrek, a researcher at the Hochschule für Telekommunikation in Leipzig since 2008, has primarily focused his research on telecommunications, particularly in the area of optical fiber technology and slow-light systems. He has contributed to multiple papers related to Brillouin scattering and its applications in enhancing optical signal processing and data transmission. His work is significant for improving the spectral resolution and reducing distortion in fiber-optic communication systems.
 Some of his notable publications include topics like "Gain enhancement in slow-light systems based on stimulated Brillouin scattering" and "Optimization of the Brillouin spectrum for slow-light systems in fiber-based optical networks"​[PRABOOK](https://prabook.com/web/andrzej.wiatrek/250113) ​[UNIVERSITY OF LEIPZIG](https://www.uni-leipzig.de/en) .
 
