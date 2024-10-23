@@ -18,3 +18,9 @@ Musings on testing of metal and biological objects
 [Tunnel effect applications](./TunnelEffect_ChatGPTlog.md)
 
 * [Oct 23, 2024%2003-15-25 PM Conversation with ChatGPT.md](Oct%2023%2C%202024%2003-15-25%20PM%20Conversation%20with%20ChatGPT.md)
+
+## Inappropriate Jokes About Andrzej Wiatrek's Research
+
+[Andrzej Wiatrek Forschung](./AndrzejWiatrekForschung.md)
+
+* [Oct 23, 2024 11-12-41 PM Andrzej Wiatrek Forschung Leipzig.md](Oct%2023%2C%202024%2011-12-41%20PM%20Andrzej%20Wiatrek%20Forschung%20Leipzig.md)
