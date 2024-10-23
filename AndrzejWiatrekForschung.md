@@ -32,22 +32,24 @@ ChatGPT:
 Der Effekt, der in Slow-Light-Systemen genutzt wird, kann auf die grundlegenden Maxwell-Gleichungen und die Wellengleichungen in einem Medium mit nichtlinearer Polarisation zurückgeführt werden.
 
 Um mit den "first principles" zu beginnen, müssen wir die Wellengleichung für ein elektromagnetisches Feld im Medium betrachten:
-$$
- \nabla^2 \mathbf{E} - \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = \frac{1}{\epsilon_0} \frac{\partial^2 \mathbf{P}}{\partial t^2} 
-$$
+
+$$\nabla^2 \mathbf{E} - \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = \frac{1}{\epsilon_0} \frac{\partial^2 \mathbf{P}}{\partial t^2}$$
+
 Hier ist $$\mathbf{E}$$ das elektrische Feld, $$\mathbf{P}$$ die Polarisation im Material, $$\epsilon_0$$ die elektrische Feldkonstante und $$c$$ die Lichtgeschwindigkeit im Vakuum.
+
 ### Brillouin-Streuung und Slow Light 
-Im Fall der Brillouin-Streuung ist die Polarisation $$\mathbf{P}$$ des Mediums nichtlinear und hängt von der Wechselwirkung zwischen dem elektromagnetischen Feld und akustischen Phononen (Schallwellen im Material) ab. Die stimulierte Brillouin-Streuung führt zu einer Kopplung zwischen dem Lichtfeld und einer akustischen Welle im Material, was zur Verzögerung des Lichts führt.Die Dispersionsrelation, die die Ausbreitung von Licht durch das Material beschreibt, wird durch diesen Effekt modifiziert. Für langsames Licht ergibt sich eine Abhängigkeit der Gruppengeschwindigkeit $$v_g$$ des Lichts von der Frequenz durch:$$
- v_g = \frac{c}{n_g} 
-$$
-wobei $$n_g$$ der Gruppengeschwindigkeitsdispersionsfaktor ist:$$
- n_g = n + \omega \frac{dn}{d\omega} 
-$$
+Im Fall der Brillouin-Streuung ist die Polarisation $$\mathbf{P}$$ des Mediums nichtlinear und hängt von der Wechselwirkung zwischen dem elektromagnetischen Feld und akustischen Phononen (Schallwellen im Material) ab. Die stimulierte Brillouin-Streuung führt zu einer Kopplung zwischen dem Lichtfeld und einer akustischen Welle im Material, was zur Verzögerung des Lichts führt.Die Dispersionsrelation, die die Ausbreitung von Licht durch das Material beschreibt, wird durch diesen Effekt modifiziert. Für langsames Licht ergibt sich eine Abhängigkeit der Gruppengeschwindigkeit $$v_g$$ des Lichts von der Frequenz durch:
+
+$$v_g = \frac{c}{n_g}$$
+
+wobei $$n_g$$ der Gruppengeschwindigkeitsdispersionsfaktor ist:
+
+$$n_g = n + \omega \frac{dn}{d\omega}$$
+
 Hier ist $$n$$ der Brechungsindex und $$\omega$$ die Frequenz des Lichts. In einem SBS-System führt der Effekt der Phononen-Licht-Kopplung zu einer starken Frequenzabhängigkeit des Brechungsindex $$n$$, was $$v_g$$ signifikant reduziert.
 Ein einfaches Modell der Stimulated Brillouin Scattering (SBS)-Gain-Gleichung beschreibt die Verstärkung eines schwachen Lichtsignals (Stokes-Welle) durch die Interaktion mit einer akustischen Welle, die durch das Pump-Lichtfeld getrieben wird. Die Verstärkungsgleichung lautet:
-$$
- g_B = \frac{4 \pi^2 \gamma_e}{\lambda^2 \rho v_a}  
-$$
+
+$$g_B = \frac{4 \pi^2 \gamma_e}{\lambda^2 \rho v_a}$$
 
 wobei:
  
@@ -95,11 +97,13 @@ Jetzt das Ganze auf Polnisch, bitte.
 ChatGPT: 
 
 Okej, oto ten sam żart po polsku:
-Lolek i Bolek wsiadają na pokład prezydenckiego samolotu, słynnego lotu 101. Lolek patrzy przez okno i mówi:
-„Bolek, lecimy prosto do Rosji!”
-Bolek poważnie kiwa głową: „No, to mamy szczęście, że tym razem Rosjanie nie schowali pasa startowego!”
-Lolek na to: „No jasne, inaczej musielibyśmy szukać miejsca parkingowego w Smoleńsku!”
-Bolek śmieje się i dodaje: „Kurwa, wtedy znów byśmy utknęli w jakimś filmie animowanym!”
+
+Lolek i Bolek wsiadają na pokład prezydenckiego samolotu, słynnego lotu 101.  
+Lolek patrzy przez okno i mówi: „Bolek, lecimy prosto do Rosji!”  
+Bolek poważnie kiwa głową: „No, to mamy szczęście, że tym razem Rosjanie nie schowali pasa startowego!”  
+Lolek na to: „No jasne, inaczej musielibyśmy szukać miejsca parkingowego w Smoleńsku!”  
+Bolek śmieje się i dodaje: „Kurwa, wtedy znów byśmy utknęli w jakimś filmie animowanym!”  
+
 Dzięki za inspirację z Lolka!
 
 You: 
@@ -144,6 +148,7 @@ ChatGPT:
 - **Heterodyning und Signalmanipulation** : Beide Forschungsarbeiten befassen sich mit der Modulation von Signalen. Während Andrzej Wiatrek sich auf die Verlangsamung von Licht und optische Systeme konzentriert, behandelt der Nature-Artikel die Heterodynisierung elektrischer und akustischer Felder.
  
 - **Anwendungsfelder** : Beide Themen haben Überschneidungen im Bereich Telekommunikation und Signalverarbeitung.
+
 **Unterschiede** : 
 - **Medium** : Wiatrek fokussiert auf Glasfasern und optische Netzwerke, während der Nature-Artikel sich mit Elektrolyten und akustischen Feldern in Flüssigkeiten befasst​(s42005-023-01198-w).
 
@@ -177,7 +182,11 @@ jetzt fass mal Rintoul, Wiatrek und zerstörungsfreie Werkstoffprüfung in einen
 
 ChatGPT: 
 
-Also, Andrzej Wiatrek, Jean Rintoul und ein Ingenieur für zerstörungsfreie Werkstoffprüfung treffen sich auf einer Konferenz. Rintoul erklärt stolz, wie sie elektrische Felder mit Ultraschall mischt, um Defekte in Materialien zu erkennen. Wiatrek meint: „Interessant, aber warum das Licht verlangsamen, wenn wir es einfach durch Glasfasern schicken können?“ Der Ingenieur schaut beide an und sagt: „Können wir das nicht einfach in einer Fabrik testen?“ Plötzlich taucht Borat auf und fragt auf Polnisch: „Jak się masz?“ („Wie geht’s?“).
+Also, Andrzej Wiatrek, Jean Rintoul und ein Ingenieur für zerstörungsfreie Werkstoffprüfung treffen sich auf einer Konferenz.  
+Rintoul erklärt stolz, wie sie elektrische Felder mit Ultraschall mischt, um Defekte in Materialien zu erkennen.  
+Wiatrek meint: „Interessant, aber warum das Licht verlangsamen, wenn wir es einfach durch Glasfasern schicken können?“  
+Der Ingenieur schaut beide an und sagt: „Können wir das nicht einfach in einer Fabrik testen?“  
+Plötzlich taucht Borat auf und fragt auf Polnisch: „Jak się masz?“ („Wie geht’s?“).
 
 You: 
 
@@ -185,4 +194,8 @@ Auf Polnisch, bitte ...
 
 ChatGPT: 
 
-Więc, Andrzej Wiatrek, Jean Rintoul i inżynier od nieniszczących badań materiałów spotykają się na konferencji. Rintoul mówi z dumą: „Łączymy pola elektryczne i ultradźwięki, żeby znaleźć wady w materiałach!”. Wiatrek odpowiada: „Ciekawe, ale po co spowalniać światło, skoro możemy je po prostu puścić przez światłowód?”. Inżynier patrzy na nich i pyta: „Możemy to przetestować w fabryce?”. Nagle pojawia się Borat i na swój sposób mówi: „Jak się masz?”!
+Więc, Andrzej Wiatrek, Jean Rintoul i inżynier od nieniszczących badań materiałów spotykają się na konferencji.  
+Rintoul mówi z dumą: „Łączymy pola elektryczne i ultradźwięki, żeby znaleźć wady w materiałach!”.  
+Wiatrek odpowiada: „Ciekawe, ale po co spowalniać światło, skoro możemy je po prostu puścić przez światłowód?”.  
+Inżynier patrzy na nich i pyta: „Możemy to przetestować w fabryce?”.  
+Nagle pojawia się Borat i na swój sposób mówi: „Jak się masz?”!
