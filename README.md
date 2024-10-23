@@ -24,3 +24,7 @@ Musings on testing of metal and biological objects
 [Andrzej Wiatrek Forschung](./AndrzejWiatrekForschung.md)
 
 * [Oct 23, 2024 11-12-41 PM Andrzej Wiatrek Forschung Leipzig.md](Oct%2023%2C%202024%2011-12-41%20PM%20Andrzej%20Wiatrek%20Forschung%20Leipzig.md)
+
+[Poles and Aircraft Stability](./PolesAndAircraftStability.md)
+
+* [Oct 24, 2024 12-30-12 AM Poles and Aircraft Stability.md](Oct%2024%2C%202024%2012-30-12%20AM%20Poles%20and%20Aircraft%20Stability.md)
