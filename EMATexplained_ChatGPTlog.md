@@ -22,7 +22,7 @@ $$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$$
 
 Where $$\mathbf{E}$$ is the induced electric field, and $$\mathbf{B}$$ is the magnetic flux density.
  
-2. **Lorentz Force Generation:** The interaction between the induced eddy currents $$\mathbf{J}$$ and a static magnetic field $$\mathbf{B}_{\text{static}}$$ (from a permanent magnet) produces a Lorentz force density $$\mathbf{F}$$:
+2. **Lorentz Force Generation:** The interaction between the induced eddy currents $$\mathbf{J}$$ and a static magnetic field $$\mathbf{B_\text{static}}$$ (from a permanent magnet) produces a Lorentz force density $$\mathbf{F}$$:
 $$\mathbf{F} = \mathbf{J} \times \mathbf{B}_{\text{static}}$$
 
 This force acts on the charge carriers in the material, causing mechanical vibrations that generate ultrasonic waves.
@@ -45,11 +45,11 @@ When receiving ultrasonic waves, the EMAT detects the mechanical vibrations of t
  
 1. **Material Vibration:** Ultrasonic waves in the material cause periodic displacements $$\mathbf{u}(\mathbf{r}, t)$$ of the conductive medium.
  
-2. **Change in Magnetic Flux:** The motion of the conductive material in the static magnetic field $$\mathbf{B}_{\text{static}}$$ changes the magnetic flux $$\Phi(t)$$ linking the EMAT coil:
-$$\Phi(t) = \int_{\mathcal{A}} \mathbf{B}_{\text{static}} \cdot d\mathbf{A}(t)$$
+2. **Change in Magnetic Flux:** The motion of the conductive material in the static magnetic field $$\mathbf{B_\text{static}}$$ changes the magnetic flux $$\Phi(t)$$ linking the EMAT coil:  
+$$\Phi(t) = \int_{\mathcal{A}} \mathbf{B}_{\text{static}} \cdot d\mathbf{A}(t)$$  
 Where $$\mathcal{A}$$ is the area enclosed by the coil.
  
-3. **Induced Electromotive Force:** According to Faraday's Law, the time-varying flux induces an electromotive force (emf) $$\mathcal{E}(t)$$ in the coil:
+4. **Induced Electromotive Force:** According to Faraday's Law, the time-varying flux induces an electromotive force (emf) $$\mathcal{E}(t)$$ in the coil:
 $$\mathcal{E}(t) = -\frac{d\Phi(t)}{dt}$$
 
 This emf is proportional to the velocity of the material's surface due to the ultrasonic wave.
@@ -91,7 +91,7 @@ You're absolutely correct, and thank you for pointing that out. The expression f
 ## Detailed Explanation of Induced Eddy Currents 
 
 ### 1. Induced Electric Field 
-An alternating current $$I(t)$$ in the EMAT coil produces a time-varying magnetic field $$\mathbf{B}_{\text{coil}}(t)$$. According to **Faraday's Law** , this changing magnetic field induces an electric field $$\mathbf{E}(\mathbf{r}, t)$$ in the conductive material:
+An alternating current $$I(t)$$ in the EMAT coil produces a time-varying magnetic field $$\mathbf{B_\text{coil}}(t)$$. According to **Faraday's Law** , this changing magnetic field induces an electric field $$\mathbf{E}(\mathbf{r}, t)$$ in the conductive material:
 $$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}_{\text{coil}}}{\partial t}$$
 
 ### 2. Ohm's Law and Current Density 
@@ -237,9 +237,7 @@ Substituting the isotropic constitutive relations into the elastic wave equation
 $$\rho \frac{\partial^2 u_i}{\partial t^2} = \frac{\partial}{\partial x_j} \left( \lambda \delta_{ij} \epsilon_{kk} + 2\mu \epsilon_{ij} \right) + F_i$$
 
 Further expanding:
-$$
- \rho \frac{\partial^2 u_i}{\partial t^2} = \lambda \frac{\partial}{\partial x_i} \epsilon_{kk} + 2\mu \frac{\partial \epsilon_{ij}}{\partial x_j} + F_i 
-$$
+$$\rho \frac{\partial^2 u_i}{\partial t^2} = \lambda \frac{\partial}{\partial x_i} \epsilon_{kk} + 2\mu \frac{\partial \epsilon_{ij}}{\partial x_j} + F_i$$
 
 Substituting the expressions for strain:
  
@@ -273,7 +271,7 @@ For **anisotropic materials** , the stiffness tensor $$c_{ijkl}$$ cannot be simp
 - **Components:**  The stiffness tensor $$c_{ijkl}$$ has $$3^4 = 81$$ components in three dimensions. However, due to the symmetries in stress and strain tensors and the material's properties, the number of independent components reduces.
  
 - **Symmetry Properties:**  
-  - **Major Symmetry:**  
+  - **Major Symmetry:** 
     $$c_{ijkl} = c_{klij}$$
  
   - **Minor Symmetry:**
@@ -288,8 +286,11 @@ $$\sigma_{ij} = c_{ijkl} \epsilon_{kl}$$
 
 But due to the complexity of $$c_{ijkl}$$, the explicit expansion involves higher-order tensors and is material-specific.
 ## Lorentz Force Components 
-The body force $$F_i$$ in the elastic wave equation is due to the Lorentz force density:
-$$F_i = (\mathbf{J} \times \mathbf{B}_{\text{static}})_i = \epsilon_{ijk} J_j B_{\text{static},k}$$
+The body force $$F_i$$ in the elastic wave equation is due to the Lorentz force density:  
+
+$$F_i = (\mathbf{J}\times\mathbf{B}_\text{static})_i$$  
+
+$$F_i = \epsilon_{ijk} J_j B_{\text{static},k}$$
 
 Where:
  
