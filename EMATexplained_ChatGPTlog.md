@@ -9,7 +9,8 @@ Prefer equations over words for explanation.
 
 ChatGPT: 
 
-Thought for 10 seconds
+*Thought for 10 seconds*
+
 An Electromagnetic Acoustic Transducer (EMAT) generates and detects ultrasonic waves in conductive materials through electromagnetic forces, without requiring physical contact. The operation of an EMAT is based on two fundamental physical principles: the Lorentz force and electromagnetic induction.
 
 ## Generation of Ultrasonic Waves (Transmission) 
@@ -85,7 +86,7 @@ Don't you need to consider (anisotropic, complex?) Ohm's Law to compute the curr
 
 ChatGPT: 
 
-Thought for 23 seconds
+*Thought for 23 seconds*
 
 You're absolutely correct, and thank you for pointing that out. The expression for induced eddy currents in my previous explanation was oversimplified. To accurately compute the current density $$\mathbf{J}$$ induced by the electric field $$\mathbf{E}$$, we need to apply Ohm's Law. If the material is anisotropic, the conductivity $$\boldsymbol{\sigma}$$ becomes a tensor, and Ohm's Law must reflect that. Let's refine the explanation accordingly.
 ## Detailed Explanation of Induced Eddy Currents 
@@ -166,7 +167,8 @@ As stress-strain relations can involve tensors of unusual order, expand the elas
 
 ChatGPT: 
 
-Thought for 13 seconds
+*Thought for 13 seconds*
+
 You're absolutely right, and I appreciate your attention to detail. Expanding the elastic wave equation into its component form in Cartesian coordinates will clarify how stress, strain, and displacement are interrelated, especially considering that stress-strain relations involve higher-order tensors.
 
 ## Elastic Wave Equation in Component Form 
