@@ -17,7 +17,10 @@ Musings on testing of metal and biological objects
 
 [Tunnel effect applications](./TunnelEffect_ChatGPTlog.md)
 
-* [Oct 23, 2024%2003-15-25 PM Conversation with ChatGPT.md](Oct%2023%2C%202024%2003-15-25%20PM%20Conversation%20with%20ChatGPT.md)
+* [Oct 23, 2024 03-15-25 PM Conversation with ChatGPT.md](Oct%2023%2C%202024%2003-15-25%20PM%20Conversation%20with%20ChatGPT.md)
+* [Oct 24, 2024 04-08-07 PM Quantum Tunneling in Materials Testing.md](Oct%2024%2C%202024%2004-08-07%20PM%20Quantum%20Tunneling%20in%20Materials%20Testing.md)
+* [Oct 24, 2024 05-13-30 PM Quantum Tunneling in Materials Testing.md](Oct%2024%2C%202024%2005-13-30%20PM%20Quantum%20Tunneling%20in%20Materials%20Testing.md)
+* [Oct 24, 2024 05-15-14 PM Quantum Tunneling in Materials Testing.md](Oct%2024%2C%202024%2005-15-14%20PM%20Quantum%20Tunneling%20in%20Materials%20Testing.md)
 
 ## Inappropriate Jokes About Andrzej Wiatrek's Research
 
