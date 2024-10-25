@@ -1,0 +1,7 @@
+Wood Bridge Concept,Corresponding Magnetic Equation,Equation
+Position on bridge (x),Magnetic field (H),x ≈ H
+Height of the bridge (h),Relative permeability (μ),h(x) ≈ μ(H)
+Wood density,Vacuum permeability (μ₀),Wood density ≈ μ₀
+Bridge mass imbalance (Δm),Magnetic flux imbalance (ΔΦ),Δm ≈ ΔΦ
+Imbalance induced by a shift,Flux imbalance induced by external field (ΔΦ(H)),Δm ≈ ξ * (h(x_right) - h(x_left))
+Rate of imbalance change (Δm/dt),Voltage induction from flux change (V = dΦ/dt),V = dΦ/dt
