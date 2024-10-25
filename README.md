@@ -35,7 +35,9 @@ Musings on testing of metal and biological objects
 
 * [Oct 24, 2024 12-30-12 AM Poles and Aircraft Stability.md](Oct%2024%2C%202024%2012-30-12%20AM%20Poles%20and%20Aircraft%20Stability.md)
 
-## Ancient History: The Fluxgate Principle As Child's Play
+## Ancient History: The Fluxgate Principle As [Child's Play](https://github.com/tatzelbrumm/Zeugnisse/blob/master/PhD.pdf)
+
+(p. 169, PDF: 170)
 
 * [Oct 25, 2024 11-26-06 PM Conversation with ChatGPT.md](Oct%2025%2C%202024%2011-26-06%20PM%20Conversation%20with%20ChatGPT.md)
 * [Oct 25, 2024 11-28-22 PM Conversation with ChatGPT.md](Oct%2025%2C%202024%2011-28-22%20PM%20Conversation%20with%20ChatGPT.md)
