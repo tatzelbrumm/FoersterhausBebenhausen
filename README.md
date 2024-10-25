@@ -34,3 +34,10 @@ Musings on testing of metal and biological objects
 [Poles and Aircraft Stability](./PolesAndAircraftStability.md)
 
 * [Oct 24, 2024 12-30-12 AM Poles and Aircraft Stability.md](Oct%2024%2C%202024%2012-30-12%20AM%20Poles%20and%20Aircraft%20Stability.md)
+
+## Ancient History: The Fluxgate Principle As Child's Play
+
+* [Oct 25, 2024 11-26-06 PM Conversation with ChatGPT.md](Oct%2025%2C%202024%2011-26-06%20PM%20Conversation%20with%20ChatGPT.md)
+* [Oct 25, 2024 11-28-22 PM Conversation with ChatGPT.md](Oct%2025%2C%202024%2011-28-22%20PM%20Conversation%20with%20ChatGPT.md)
+* [Oct 25, 2024 11-49-47 PM Dr Foerster Magnetometer Zusammenfassung.md](Oct%2025%2C%202024%2011-49-47%20PM%20Dr%20Foerster%20Magnetometer%20Zusammenfassung.md)
+* [Oct 25, 2024 11-53-36 PM Dr Foerster Magnetometer Zusammenfassung.md](Oct%2025%2C%202024%2011-53-36%20PM%20Dr%20Foerster%20Magnetometer%20Zusammenfassung.md)
