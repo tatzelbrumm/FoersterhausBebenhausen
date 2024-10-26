@@ -50,4 +50,6 @@ Musings on testing of metal and biological objects
 
 ## It Takes Some Balls [...](https://www.linkedin.com/feed/update/urn:li:activity:7254780341872201729?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7254780341872201729%2C7255878953083584512%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287255878953083584512%2Curn%3Ali%3Aactivity%3A7254780341872201729%29)
 
+[It Takes Balls](./ItTakesBalls.md)
+
 * [Oct 26, 2024 12-21-18 PM Putt's Law Explained.md](Oct%2026%2C%202024%2012-21-18%20PM%20Putt's%20Law%20Explained.md)
