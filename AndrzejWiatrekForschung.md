@@ -111,6 +111,7 @@ Lolek na to: „No jasne, inaczej musielibyśmy szukać miejsca parkingowego w S
 Bolek śmieje się i dodaje: „Kurwa, wtedy znów byśmy utknęli w jakimś filmie animowanym!”  
 
 Dzięki za inspirację z Lolka!
+![Lolek i Bolek](pix/LolekBolek.jpg)
 
 You: 
 
