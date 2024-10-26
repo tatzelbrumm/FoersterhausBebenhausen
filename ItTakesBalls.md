@@ -64,7 +64,8 @@ Sketch me such an apparatus. With detailed equations for mechanical and electric
 
 ChatGPT: 
 
-![A detailed sketch of an eddy current testing apparatus for inspecting bearing ball quality. The setup includes:
+*prompt:*  
+A detailed sketch of an eddy current testing apparatus for inspecting bearing ball quality. The setup includes:
 1. An encircling coil through which the metallic ball passes, with labeled parts to illustrate magnetic field induction and eddy current generation around the ball.
 2. A probe coil setup positioned near the ball surface, detailing the distance and orientation for localized defect detection.
 3. A differential coil arrangement with two separate coils placed around the sphere to capture differential impedance readings.
@@ -72,8 +73,9 @@ ChatGPT:
    - Magnetic field B and its relationship to induced current (Faraday’s Law: EMF = -dΦ/dt),
    - Skin depth calculation (δ = sqrt(2/ωμσ)),
    - Eddy current density (J = σ·E).
-The illustration should be precise, with clear component labeling and organized equation placements to clarify their relevance to each part of the apparatus.](pix/EddyCurrentTestingArt.webp) 
+The illustration should be precise, with clear component labeling and organized equation placements to clarify their relevance to each part of the apparatus.
 
+![A detailed sketch of an eddy current testing apparatus for inspecting bearing ball quality.](pix/EddyCurrentTestingArt.jpg) 
 
 Here's a detailed sketch of an eddy current testing apparatus for inspecting bearing ball quality, incorporating encircling coil, probe coil, and differential coil setups. The image includes key equations, showing the relationships between magnetic fields, induced currents, and the calculations for skin depth and eddy current density, labeled around each component for clarity.
 
@@ -107,7 +109,7 @@ These parameters help balance sensitivity and defect resolution based on materia
 
 You: 
 
-Now, assuming spherical steel bearing balls of radius $r_{\text{Sepp Herberger}$, propose a geometry for excitation coils and magnetometers (inductive or otherwise), and geometric shape of both DC and AC components of the excitation field
+Now, assuming spherical steel bearing balls of radius $r_\text{Sepp Herberger}$, propose a geometry for excitation coils and magnetometers (inductive or otherwise), and geometric shape of both DC and AC components of the excitation field
 
 ChatGPT: 
 
