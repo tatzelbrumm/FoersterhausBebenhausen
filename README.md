@@ -53,3 +53,5 @@ Musings on testing of metal and biological objects
 [It Takes Balls](./ItTakesBalls.md)
 
 * [Oct 26, 2024 12-21-18 PM Putt's Law Explained.md](Oct%2026%2C%202024%2012-21-18%20PM%20Putt's%20Law%20Explained.md)
+* [Oct 26, 2024 01-25-24 PM Putt's Law Explained.md](Oct%2026%2C%202024%2001-25-24%20PM%20Putt's%20Law%20Explained.md)
+
