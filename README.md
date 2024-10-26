@@ -43,3 +43,7 @@ Musings on testing of metal and biological objects
 * [Oct 25, 2024 11-28-22 PM Conversation with ChatGPT.md](Oct%2025%2C%202024%2011-28-22%20PM%20Conversation%20with%20ChatGPT.md)
 * [Oct 25, 2024 11-49-47 PM Dr Foerster Magnetometer Zusammenfassung.md](Oct%2025%2C%202024%2011-49-47%20PM%20Dr%20Foerster%20Magnetometer%20Zusammenfassung.md)
 * [Oct 25, 2024 11-53-36 PM Dr Foerster Magnetometer Zusammenfassung.md](Oct%2025%2C%202024%2011-53-36%20PM%20Dr%20Foerster%20Magnetometer%20Zusammenfassung.md)
+
+## Normenkontrollklage
+
+* [Oct 26, 2024 04-22-26 AM Normen f&uuml;r Fluxgate-Magnetometer.md](Oct%2026%2C%202024%2004-22-26%20AM%20Normen%20für\ Fluxgate-Magnetometer.md)
