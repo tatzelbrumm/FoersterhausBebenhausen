@@ -46,4 +46,4 @@ Musings on testing of metal and biological objects
 
 ## Normenkontrollklage
 
-* [Oct 26, 2024 04-22-26 AM Normen f&uuml;r Fluxgate-Magnetometer.md](Oct%2026%2C%202024%2004-22-26%20AM%20Normen%20für\ Fluxgate-Magnetometer.md)
+* [Oct 26, 2024 04-22-26 AM Normen f&uuml;r Fluxgate-Magnetometer.md](Oct%2026%2C%202024%2004-22-26%20AM%20Normen%20für%20Fluxgate-Magnetometer.md)
