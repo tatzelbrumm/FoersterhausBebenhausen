@@ -46,7 +46,11 @@ Musings on testing of metal and biological objects
 
 ## Normenkontrollklage
 
-* [Oct 26, 2024 04-22-26 AM Normen f&uuml;r Fluxgate-Magnetometer.md](Oct%2026%2C%202024%2004-22-26%20AM%20Normen%20für%20Fluxgate-Magnetometer.md)
+[Normen f&uuml;r elektromagnetische Messungen](./Normen.md)
+
+* [Oct 26, 2024 04-22-26 AM Normen f&uuml;r Fluxgate-Magnetometer.md](Oct%2026%2C%202024%2004-22-26%20AM%20Normen%20f%C3%BCr%20Fluxgate-Magnetometer.md)
+* [Oct 28, 2024 07-19-34 PM Normen f&uuml;r Fluxgate-Magnetometer.md](Oct%2028%2C%202024%2007-19-34%20PM%20Normen%20f%C3%BCr%20Fluxgate-Magnetometer.md)
+* [Oct 28, 2024 07-31-50 AM Normen f&uuml;r Fluxgate-Magnetometer.md](Oct%2028%2C%202024%2007-31-50%20PM%20Normen%20f%C3%BCr%20Fluxgate-Magnetometer.md)
 
 ## It Takes Some Balls [...](https://www.linkedin.com/feed/update/urn:li:activity:7254780341872201729?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7254780341872201729%2C7255878953083584512%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287255878953083584512%2Curn%3Ali%3Aactivity%3A7254780341872201729%29)
 
