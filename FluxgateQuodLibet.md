@@ -290,7 +290,7 @@ I’m working through the mathematical terms, simplifying them step-by-step. The
 **Analyzing harmonic components**  
 I'm exploring the nonlinear magnetic flux density, represented as a cubic function, to identify contributions from the external magnetic field. This leads me to isolating terms that contribute to the second harmonic.
 
-**Entstehung der Oberwellen und insbesondere der zweiten Harmonischen im Fluxgate-Magnetometer**
+**Entstehung der Oberwellen und insbesondere der zweiten Harmonischen im Fluxgate-Magnetometer**  
 Das Fluxgate-Magnetometer nutzt die nichtlineare Magnetisierungskurve eines ferromagnetischen Materials, um externe Magnetfelder zu messen. Die Nichtlinearität führt dazu, dass die induzierte Spannung in der Sekundärwicklung Oberwellen (Harmonische) der Anregungsfrequenz enthält. Insbesondere ist die zweite Harmonische ($2\omega$) proportional zum externen Magnetfeld $H_{\text{ext}}$.
 
 ---
@@ -463,7 +463,7 @@ ChatGPT:
 
 *Thought for 13 seconds*
 
-Making Assumptions:  
+**Making Assumptions:**  
 This text translates the user's question about the assumptions in the context of the previous explanation on the second harmonic in a fluxgate magnetometer.
 
 **Clarifying $H_p(t)$ assumptions**  
@@ -1084,7 +1084,8 @@ Die Wahl des Demodulationsverfahrens hängt von den spezifischen Anforderungen u
 
 You: 
 
-Und jetzt vergiss das ganze Fouriertransformationsgedöns, das Elektroingenieure aus purer Gewohnheit betreiben, und mach über das Demodulationssignal auch nur Annahmen über dessen Symmetrie.
+Und jetzt vergiss das ganze Fouriertransformationsgedöns, das Elektroingenieure aus purer Gewohnheit betreiben, 
+und [mach über das Demodulationssignal auch nur Annahmen über dessen Symmetrie](https://github.com/tatzelbrumm/Zeugnisse/blob/master/PhD.pdf).
 
 ChatGPT: 
 
