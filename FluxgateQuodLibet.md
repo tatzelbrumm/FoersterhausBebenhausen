@@ -159,7 +159,8 @@ $$H_{\text{gesamt}}(t) = H_p(t) + H_{\text{ext}}$$
 
 **3. Magnetisierung des Kerns** 
 
-Die magnetische Flussdichte $$B(t)$$ im Kern ist abhängig von der Magnetisierungskurve des Materials (nichtlineare Beziehung zwischen $$B$$ und $$H$$):
+Die magnetische Flussdichte $$B(t)$$ im Kern ist abhängig von der Magnetisierungskurve des Materials  
+(nichtlineare Beziehung zwischen $$B$$ und $$H$$):
 
 $$B(t) = \mu_0 \left( H_{\text{gesamt}}(t) + M(H_{\text{gesamt}}(t)) \right)$$
  
@@ -280,7 +281,7 @@ OK, let me see. The task is to ensure the assistant's explanation details how ov
 Ich schaue mir gerade an, wie die nichtlineare Magnetisierungskurve eines ferromagnetischen Materials Oberwellen im Fluxgate-Magnetometer erzeugt, die sich proportional zum externen Magnetfeld verhalten.
 
 **Analyzing magnetic flux**
-I'm detailing how the magnetic flux density ($B(t)$) follows a nonlinear relationship with the total magnetic field ($H_{\text{gesamt}}$), and examining the development using a Taylor series expansion to understand the creation of harmonics.
+I'm detailing how the magnetic flux density $B(t)$ follows a nonlinear relationship with the total magnetic field ($H_{\text{gesamt}}$), and examining the development using a Taylor series expansion to understand the creation of harmonics.
 
 **Analyzing harmonic components**
 I’m working through the mathematical terms, simplifying them step-by-step. The first term aligns with the base frequency $\omega$, while the second term reveals the second harmonic $2\omega$ using a trigonometric identity.
@@ -297,11 +298,11 @@ Das Fluxgate-Magnetometer nutzt die nichtlineare Magnetisierungskurve eines ferr
 
 Der ferromagnetische Kern wird durch ein sinusförmiges Erregerfeld $H_p(t)$ in die Sättigung gebracht:
 
-$H_p(t) = H_0 \sin(\omega t)$
+$$H_p(t) = H_0 \sin(\omega t)$$
 
 Das Gesamtfeld im Kern ist die Summe aus dem Erregerfeld und dem externen Feld:
 
-$H_{\text{gesamt}}(t) = H_p(t) + H_{\text{ext}}$
+$$H_{\text{gesamt}}(t) = H_p(t) + H_{\text{ext}}$$
 
 
 ---
@@ -310,7 +311,7 @@ $H_{\text{gesamt}}(t) = H_p(t) + H_{\text{ext}}$
 
 Die Beziehung zwischen der magnetischen Flussdichte $B$ und der magnetischen Feldstärke $H$ ist nichtlinear:
 
-$B(t) = \mu_0 \mu_r(H) H(t)$
+$$B(t) = \mu_0 \mu_r(H) H(t)$$
 
 Da die relative Permeabilität $\mu_r(H)$ vom Feld abhängt, ist $B(t)$ eine nichtlineare Funktion von $H(t)$.
 
@@ -320,7 +321,7 @@ Da die relative Permeabilität $\mu_r(H)$ vom Feld abhängt, ist $B(t)$ eine nic
 
 Um die Entstehung der Oberwellen zu verstehen, entwickeln wir $B(t)$ in eine Taylor-Reihe um $H_{\text{ext}}$:
 
-$B(t) = B(H_{\text{ext}}) + \left. \frac{dB}{dH} \right|_{H_{\text{ext}}} H_p(t) + \frac{1}{2} \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_p(t)^2 + \dots$
+$$B(t) = B(H_{\text{ext}}) + \frac{dB}{dH}(H_{\text{ext}}) H_p(t) + \frac{1}{2} \frac{d^2B}{dH^2}(H_{\text{ext}}) H_p(t)^2+ \dots$$
 
 Hier ist:
  
@@ -335,11 +336,11 @@ Hier ist:
 
 Die induzierte Spannung in der Sekundärwicklung ist proportional zur zeitlichen Änderung der magnetischen Flussdichte:
 
-$V_s(t) = -N_s A \frac{dB(t)}{dt}$
+$$V_s(t) = -N_s A \frac{dB(t)}{dt}$$
 
 Setzen wir die Taylor-Entwicklung von $B(t)$ ein:
 
-$V_s(t) = -N_s A \left( \left. \frac{dB}{dH} \right|_{H_{\text{ext}}} \frac{dH_p(t)}{dt} + \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_p(t) \frac{dH_p(t)}{dt} + \dots \right)$
+$$V_s(t) = -N_s A \left(\frac{dB}{dH}(H_{\text{ext}}) \frac{dH_p(t)}{dt} + \frac{d^2B}{dH^2}(H_{\text{ext}}) H_p(t) \frac{dH_p(t)}{dt} + \dots \right)$$
 
 ---
 
@@ -347,29 +348,29 @@ $V_s(t) = -N_s A \left( \left. \frac{dB}{dH} \right|_{H_{\text{ext}}} \frac{dH_p
 
 **Erster Term (Grundfrequenz):** 
 
-$V_1(t) = -N_s A \left. \frac{dB}{dH} \right|_{H_{\text{ext}}} \frac{d}{dt} \left( H_0 \sin(\omega t) \right) = -N_s A \left. \frac{dB}{dH} \right|_{H_{\text{ext}}} H_0 \omega \cos(\omega t)$
+$$V_1(t) = -N_s A \frac{dB}{dH}(H_{\text{ext}}) \frac{d}{dt} \left( H_0 \sin(\omega t) \right) = -N_s A \frac{dB}{dH}(H_{\text{ext}}) H_0 \omega \cos(\omega t)$$
 
 Dies ist ein Signal mit der Grundfrequenz $\omega$.
 
 **Zweiter Term (Zweite Harmonische):** 
 
-$V_2(t) = -N_s A \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_p(t) \frac{dH_p(t)}{dt}$
+$$V_2(t) = -N_s A \frac{d^2B}{dH^2}(H_{\text{ext}}) H_p(t) \frac{dH_p(t)}{dt}$$
 
 Setzen wir $H_p(t)$ ein:
 
-$V_2(t) = -N_s A \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_0 \sin(\omega t) \cdot H_0 \omega \cos(\omega t)$
+$$V_2(t) = -N_s A \frac{d^2B}{dH^2}(H_{\text{ext}}) H_0 \sin(\omega t) \cdot H_0 \omega \cos(\omega t)$$
 
 Vereinfachen wir den Ausdruck:
 
-$V_2(t) = -N_s A \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_0^2 \omega \sin(\omega t) \cos(\omega t)$
+$$V_2(t) = -N_s A \frac{d^2B}{dH^2}(H_{\text{ext}}) H_0^2 \omega \sin(\omega t) \cos(\omega t)$$
 
 Nutzen wir die trigonometrische Identität:
 
-$\sin(\omega t) \cos(\omega t) = \frac{1}{2} \sin(2\omega t)$
+$$\sin(\omega t) \cos(\omega t) = \frac{1}{2} \sin(2\omega t)$$
 
 Erhalten wir:
 
-$V_2(t) = -\frac{1}{2} N_s A \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_0^2 \omega \sin(2\omega t)$
+$$V_2(t) = -\frac{1}{2} N_s A \frac{d^2B}{dH^2}(H_{\text{ext}}) H_0^2 \omega \sin(2\omega t)$$
 
 Dies ist ein Signal mit der zweiten Harmonischen $2\omega$.
 
@@ -377,8 +378,8 @@ Dies ist ein Signal mit der zweiten Harmonischen $2\omega$.
 
 **6. Abhängigkeit von $H_{\text{ext}}$** 
 
-Die Koeffizienten $\left. \frac{dB}{dH} \right|_{H_{\text{ext}}}$ und $\left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}}$ hängen vom externen Magnetfeld ab.  
-Insbesondere ist die zweite Ableitung $\left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}}$ direkt proportional zu $H_{\text{ext}}$ in bestimmten Bereichen der Magnetisierungskurve.
+Die Koeffizienten $\frac{dB}{dH}(H_{\text{ext}})$ und $\frac{d^2B}{dH^2}(H_{\text{ext}})$ hängen vom externen Magnetfeld ab.  
+Insbesondere ist die zweite Ableitung $\frac{d^2B}{dH^2}(H_{\text{ext}})$ direkt proportional zu $H_{\text{ext}}$ in bestimmten Bereichen der Magnetisierungskurve.
 
 ---
 
@@ -397,17 +398,17 @@ Insbesondere ist die zweite Ableitung $\left. \frac{d^2B}{dH^2} \right|_{H_{\tex
 
 Angenommen, die Beziehung zwischen $B$ und $H$ kann näherungsweise durch eine Potenzreihe dargestellt werden:
 
-$B(H) = k_1 H + k_2 H^2 + k_3 H^3 + \dots$
+$$B(H) = k_1 H + k_2 H^2 + k_3 H^3 + \dots$$
 
 Setzen wir $H_{\text{gesamt}}(t) = H_0 \sin(\omega t) + H_{\text{ext}}$ ein und betrachten die Terme, die zur zweiten Harmonischen beitragen.  
 
 **Quadratischer Term ($H^2$)** :
 
-$H_{\text{gesamt}}(t)^2 = \left( H_0 \sin(\omega t) + H_{\text{ext}} \right)^2 = H_0^2 \sin^2(\omega t) + 2 H_0 H_{\text{ext}} \sin(\omega t) + H_{\text{ext}}^2$
+$$H_{\text{gesamt}}(t)^2 = \left( H_0 \sin(\omega t) + H_{\text{ext}} \right)^2 = H_0^2 \sin^2(\omega t) + 2 H_0 H_{\text{ext}} \sin(\omega t) + H_{\text{ext}}^2$$
 
 Der Term $H_0^2 \sin^2(\omega t)$ enthält eine Komponente mit Frequenz $2\omega$:
 
-$\sin^2(\omega t) = \frac{1 - \cos(2\omega t)}{2}$
+$$\sin^2(\omega t) = \frac{1 - \cos(2\omega t)}{2}$$
 
 Aber dieser Term ist unabhängig von $H_{\text{ext}}$ und trägt nicht zur Messung des externen Feldes bei.  
 Der Term $2 H_0 H_{\text{ext}} \sin(\omega t)$ enthält nur die Grundfrequenz $\omega$.
