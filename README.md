@@ -39,7 +39,7 @@ Musings on testing of metal and biological objects
 
 (p. 169, PDF: 170)
 
-[Integrated Micro Fluxgate and MEMS Accelerometer](./FluxgateQuodLibet.md)
+[Integrated Micro Fluxgate and MEMS Accelerometer](./DeltaSigmaComparison.md)
 
 * [Oct 25, 2024 11-26-06 PM Conversation with ChatGPT.md](Oct%2025%2C%202024%2011-26-06%20PM%20Conversation%20with%20ChatGPT.md)
 * [Oct 25, 2024 11-28-22 PM Conversation with ChatGPT.md](Oct%2025%2C%202024%2011-28-22%20PM%20Conversation%20with%20ChatGPT.md)
