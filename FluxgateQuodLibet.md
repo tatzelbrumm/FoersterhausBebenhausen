@@ -268,15 +268,28 @@ Drösel mal auseinander, wie die Oberwellen und vor allem die 2. Harmonische zus
 
 ChatGPT: 
 
-**Thought for 16 seconds**Breaking it down** 
+*Thought for 16 seconds*
+
+**Breaking it down**  
 The request is to detail the generation of overtones, especially the second harmonic, in the fluxgate magnetometer.
-**Mapping out the response** 
+
+**Mapping out the response**  
 OK, let me see. The task is to ensure the assistant's explanation details how overtones, especially the second harmonic, emerge in fluxgate magnetometers, incorporating necessary equations and adhering to OpenAI's guidelines.
-**Forschung an Fluxgate-Magnetometern** 
+
+**Forschung an Fluxgate-Magnetometern**  
 Ich schaue mir gerade an, wie die nichtlineare Magnetisierungskurve eines ferromagnetischen Materials Oberwellen im Fluxgate-Magnetometer erzeugt, die sich proportional zum externen Magnetfeld verhalten.
-**Analyzing magnetic flux** I'm detailing how the magnetic flux density ($B(t)$) follows a nonlinear relationship with the total magnetic field ($H_{\text{gesamt}}$), and examining the development using a Taylor series expansion to understand the creation of harmonics.**Analyzing harmonic components** I’m working through the mathematical terms, simplifying them step-by-step. The first term aligns with the base frequency $\omega$, while the second term reveals the second harmonic $2\omega$ using a trigonometric identity.**Analyzing harmonic components** 
+
+**Analyzing magnetic flux**
+I'm detailing how the magnetic flux density ($B(t)$) follows a nonlinear relationship with the total magnetic field ($H_{\text{gesamt}}$), and examining the development using a Taylor series expansion to understand the creation of harmonics.
+
+**Analyzing harmonic components**
+I’m working through the mathematical terms, simplifying them step-by-step. The first term aligns with the base frequency $\omega$, while the second term reveals the second harmonic $2\omega$ using a trigonometric identity.
+
+**Analyzing harmonic components**  
 I'm exploring the nonlinear magnetic flux density, represented as a cubic function, to identify contributions from the external magnetic field. This leads me to isolating terms that contribute to the second harmonic.
-**Entstehung der Oberwellen und insbesondere der zweiten Harmonischen im Fluxgate-Magnetometer** Das Fluxgate-Magnetometer nutzt die nichtlineare Magnetisierungskurve eines ferromagnetischen Materials, um externe Magnetfelder zu messen. Die Nichtlinearität führt dazu, dass die induzierte Spannung in der Sekundärwicklung Oberwellen (Harmonische) der Anregungsfrequenz enthält. Insbesondere ist die zweite Harmonische ($2\omega$) proportional zum externen Magnetfeld $H_{\text{ext}}$.
+
+**Entstehung der Oberwellen und insbesondere der zweiten Harmonischen im Fluxgate-Magnetometer**
+Das Fluxgate-Magnetometer nutzt die nichtlineare Magnetisierungskurve eines ferromagnetischen Materials, um externe Magnetfelder zu messen. Die Nichtlinearität führt dazu, dass die induzierte Spannung in der Sekundärwicklung Oberwellen (Harmonische) der Anregungsfrequenz enthält. Insbesondere ist die zweite Harmonische ($2\omega$) proportional zum externen Magnetfeld $H_{\text{ext}}$.
 
 ---
 
