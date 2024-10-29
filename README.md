@@ -39,6 +39,8 @@ Musings on testing of metal and biological objects
 
 (p. 169, PDF: 170)
 
+[Integrated Micro Fluxgate and MEMS Accelerometer](./FluxgateQuodLibet.md)
+
 * [Oct 25, 2024 11-26-06 PM Conversation with ChatGPT.md](Oct%2025%2C%202024%2011-26-06%20PM%20Conversation%20with%20ChatGPT.md)
 * [Oct 25, 2024 11-28-22 PM Conversation with ChatGPT.md](Oct%2025%2C%202024%2011-28-22%20PM%20Conversation%20with%20ChatGPT.md)
 * [Oct 25, 2024 11-49-47 PM Dr Foerster Magnetometer Zusammenfassung.md](Oct%2025%2C%202024%2011-49-47%20PM%20Dr%20Foerster%20Magnetometer%20Zusammenfassung.md)
