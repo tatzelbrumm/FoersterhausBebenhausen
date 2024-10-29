@@ -875,28 +875,34 @@ I'm exploring the nonlinear magnetic flux density, represented as a cubic functi
 
 ---
 
-**1. Grundprinzip** Der ferromagnetische Kern wird durch ein sinusförmiges Erregerfeld $H_p(t)$ in die Sättigung gebracht:$
- H_p(t) = H_0 \sin(\omega t) 
-$
+**1. Grundprinzip** 
+
+Der ferromagnetische Kern wird durch ein sinusförmiges Erregerfeld $H_p(t)$ in die Sättigung gebracht:
+
+$H_p(t) = H_0 \sin(\omega t)$
 
 Das Gesamtfeld im Kern ist die Summe aus dem Erregerfeld und dem externen Feld:
-$
- H_{\text{gesamt}}(t) = H_p(t) + H_{\text{ext}} 
-$
+
+$H_{\text{gesamt}}(t) = H_p(t) + H_{\text{ext}}$
 
 
 ---
 
-**2. Nichtlineare Magnetisierung** Die Beziehung zwischen der magnetischen Flussdichte $B$ und der magnetischen Feldstärke $H$ ist nichtlinear:$
- B(t) = \mu_0 \mu_r(H) H(t) 
-$
+**2. Nichtlineare Magnetisierung** 
+
+Die Beziehung zwischen der magnetischen Flussdichte $B$ und der magnetischen Feldstärke $H$ ist nichtlinear:
+
+$B(t) = \mu_0 \mu_r(H) H(t)$
+
 Da die relative Permeabilität $\mu_r(H)$ vom Feld abhängt, ist $B(t)$ eine nichtlineare Funktion von $H(t)$.
 
 ---
 
-**3. Entwicklung der Nichtlinearität** Um die Entstehung der Oberwellen zu verstehen, entwickeln wir $B(t)$ in eine Taylor-Reihe um $H_{\text{ext}}$:$
- B(t) = B(H_{\text{ext}}) + \left. \frac{dB}{dH} \right|_{H_{\text{ext}}} H_p(t) + \frac{1}{2} \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_p(t)^2 + \dots 
-$
+**3. Entwicklung der Nichtlinearität** 
+
+Um die Entstehung der Oberwellen zu verstehen, entwickeln wir $B(t)$ in eine Taylor-Reihe um $H_{\text{ext}}$:
+
+$B(t) = B(H_{\text{ext}}) + \left. \frac{dB}{dH} \right|_{H_{\text{ext}}} H_p(t) + \frac{1}{2} \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_p(t)^2 + \dots$
 
 Hier ist:
  
@@ -907,51 +913,59 @@ Hier ist:
 
 ---
 
-**4. Induzierte Spannung** 
-Die induzierte Spannung in der Sekundärwicklung ist proportional zur zeitlichen Änderung der magnetischen Flussdichte:
-$
- V_s(t) = -N_s A \frac{dB(t)}{dt} 
-$
-Setzen wir die Taylor-Entwicklung von $B(t)$ ein:$
- V_s(t) = -N_s A \left( \left. \frac{dB}{dH} \right|_{H_{\text{ext}}} \frac{dH_p(t)}{dt} + \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_p(t) \frac{dH_p(t)}{dt} + \dots \right) 
-$
+**4. Induzierte Spannung**
 
+Die induzierte Spannung in der Sekundärwicklung ist proportional zur zeitlichen Änderung der magnetischen Flussdichte:
+
+$V_s(t) = -N_s A \frac{dB(t)}{dt}$
+
+Setzen wir die Taylor-Entwicklung von $B(t)$ ein:
+
+$V_s(t) = -N_s A \left( \left. \frac{dB}{dH} \right|_{H_{\text{ext}}} \frac{dH_p(t)}{dt} + \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_p(t) \frac{dH_p(t)}{dt} + \dots \right)$
 
 ---
 
-**5. Berechnung der Terme** **Erster Term (Grundfrequenz):** $
- V_1(t) = -N_s A \left. \frac{dB}{dH} \right|_{H_{\text{ext}}} \frac{d}{dt} \left( H_0 \sin(\omega t) \right) = -N_s A \left. \frac{dB}{dH} \right|_{H_{\text{ext}}} H_0 \omega \cos(\omega t) 
-$
-Dies ist ein Signal mit der Grundfrequenz $\omega$.**Zweiter Term (Zweite Harmonische):** $
- V_2(t) = -N_s A \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_p(t) \frac{dH_p(t)}{dt} 
-$
-Setzen wir $H_p(t)$ ein:$
- V_2(t) = -N_s A \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_0 \sin(\omega t) \cdot H_0 \omega \cos(\omega t) 
-$
+**5. Berechnung der Terme** 
+
+**Erster Term (Grundfrequenz):** 
+
+$V_1(t) = -N_s A \left. \frac{dB}{dH} \right|_{H_{\text{ext}}} \frac{d}{dt} \left( H_0 \sin(\omega t) \right) = -N_s A \left. \frac{dB}{dH} \right|_{H_{\text{ext}}} H_0 \omega \cos(\omega t)$
+
+Dies ist ein Signal mit der Grundfrequenz $\omega$.
+
+**Zweiter Term (Zweite Harmonische):** 
+
+$V_2(t) = -N_s A \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_p(t) \frac{dH_p(t)}{dt}$
+
+Setzen wir $H_p(t)$ ein:
+
+$V_2(t) = -N_s A \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_0 \sin(\omega t) \cdot H_0 \omega \cos(\omega t)$
 
 Vereinfachen wir den Ausdruck:
-$
- V_2(t) = -N_s A \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_0^2 \omega \sin(\omega t) \cos(\omega t) 
-$
+
+$V_2(t) = -N_s A \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_0^2 \omega \sin(\omega t) \cos(\omega t)$
 
 Nutzen wir die trigonometrische Identität:
-$
- \sin(\omega t) \cos(\omega t) = \frac{1}{2} \sin(2\omega t) 
-$
+
+$\sin(\omega t) \cos(\omega t) = \frac{1}{2} \sin(2\omega t)$
 
 Erhalten wir:
-$
- V_2(t) = -\frac{1}{2} N_s A \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_0^2 \omega \sin(2\omega t) 
-$
+
+$V_2(t) = -\frac{1}{2} N_s A \left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}} H_0^2 \omega \sin(2\omega t)$
+
 Dies ist ein Signal mit der zweiten Harmonischen $2\omega$.
 
 ---
 
-6. Abhängigkeit von $H_{\text{ext}}$** Die Koeffizienten $\left. \frac{dB}{dH} \right|_{H_{\text{ext}}}$ und $\left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}}$ hängen vom externen Magnetfeld ab. Insbesondere ist die zweite Ableitung $\left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}}$ direkt proportional zu $H_{\text{ext}}$ in bestimmten Bereichen der Magnetisierungskurve.
+**6. Abhängigkeit von $H_{\text{ext}}$** 
+
+Die Koeffizienten $\left. \frac{dB}{dH} \right|_{H_{\text{ext}}}$ und $\left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}}$ hängen vom externen Magnetfeld ab.  
+Insbesondere ist die zweite Ableitung $\left. \frac{d^2B}{dH^2} \right|_{H_{\text{ext}}}$ direkt proportional zu $H_{\text{ext}}$ in bestimmten Bereichen der Magnetisierungskurve.
 
 ---
 
 **7. Physikalische Interpretation**  
+
 - **Grundfrequenz ($\omega$)** : Entsteht aus der linearen Reaktion des Materials auf das Erregerfeld.
  
 - **Zweite Harmonische ($2\omega$)** : Resultiert aus der quadratischen Nichtlinearität der Magnetisierungskurve.
@@ -961,32 +975,47 @@ Dies ist ein Signal mit der zweiten Harmonischen $2\omega$.
 
 ---
 
-**8. Alternative Herleitung mit Potenzreihen** Angenommen, die Beziehung zwischen $B$ und $H$ kann näherungsweise durch eine Potenzreihe dargestellt werden:$
- B(H) = k_1 H + k_2 H^2 + k_3 H^3 + \dots 
-$
-Setzen wir $H_{\text{gesamt}}(t) = H_0 \sin(\omega t) + H_{\text{ext}}$ ein und betrachten die Terme, die zur zweiten Harmonischen beitragen.Quadratischer Term ($H^2$)** :$
- H_{\text{gesamt}}(t)^2 = \left( H_0 \sin(\omega t) + H_{\text{ext}} \right)^2 = H_0^2 \sin^2(\omega t) + 2 H_0 H_{\text{ext}} \sin(\omega t) + H_{\text{ext}}^2 
-$
-Der Term $H_0^2 \sin^2(\omega t)$ enthält eine Komponente mit Frequenz $2\omega$:$
- \sin^2(\omega t) = \frac{1 - \cos(2\omega t)}{2} 
-$
-Aber dieser Term ist unabhängig von $H_{\text{ext}}$ und trägt nicht zur Messung des externen Feldes bei.Der Term $2 H_0 H_{\text{ext}} \sin(\omega t)$ enthält nur die Grundfrequenz $\omega$.Kubischer Term ($H^3$)** :Hier entstehen Terme proportional zu $$\sin(3\omega t)$$, $$\sin(\omega t)$$ und $$\sin(2\omega t)$$. Der relevante Term für die zweite Harmonische ist:$$
- H_0^2 H_{\text{ext}} \sin^2(\omega t) \sin(\omega t) \propto H_0^2 H_{\text{ext}} \sin(2\omega t) 
-$$
+**8. Alternative Herleitung mit Potenzreihen** 
+
+Angenommen, die Beziehung zwischen $B$ und $H$ kann näherungsweise durch eine Potenzreihe dargestellt werden:
+
+$B(H) = k_1 H + k_2 H^2 + k_3 H^3 + \dots$
+
+Setzen wir $H_{\text{gesamt}}(t) = H_0 \sin(\omega t) + H_{\text{ext}}$ ein und betrachten die Terme, die zur zweiten Harmonischen beitragen.  
+
+**Quadratischer Term ($H^2$)** :
+
+$H_{\text{gesamt}}(t)^2 = \left( H_0 \sin(\omega t) + H_{\text{ext}} \right)^2 = H_0^2 \sin^2(\omega t) + 2 H_0 H_{\text{ext}} \sin(\omega t) + H_{\text{ext}}^2$
+
+Der Term $H_0^2 \sin^2(\omega t)$ enthält eine Komponente mit Frequenz $2\omega$:
+
+$\sin^2(\omega t) = \frac{1 - \cos(2\omega t)}{2}$
+
+Aber dieser Term ist unabhängig von $H_{\text{ext}}$ und trägt nicht zur Messung des externen Feldes bei.  
+Der Term $2 H_0 H_{\text{ext}} \sin(\omega t)$ enthält nur die Grundfrequenz $\omega$.
+
+**Kubischer Term ($H^3$)** :
+
+Hier entstehen Terme proportional zu $$\sin(3\omega t)$$, $$\sin(\omega t)$$ und $$\sin(2\omega t)$$.  
+Der relevante Term für die zweite Harmonische ist:
+
+$$H_0^2 H_{\text{ext}} \sin^2(\omega t) \sin(\omega t) \propto H_0^2 H_{\text{ext}} \sin(2\omega t)$$
+
 Dies zeigt, dass die Amplitude der zweiten Harmonischen proportional zu $$H_{\text{ext}}$$ ist.
 
 ---
 
 **9. Signalverarbeitung** 
+
 Durch Filtern und Verstärken der zweiten Harmonischen kann das externe Magnetfeld bestimmt werden:
-$$
- V_{\text{2}\omega} \propto H_{\text{ext}} 
-$$
+
+$$V_{\text{2}\omega} \propto H_{\text{ext}}$$
 
 
 ---
 
 **10. Zusammenfassung**  
+
 - **Nichtlinearität** : Die Nichtlinearität der Magnetisierungskurve führt zu Oberwellen in der induzierten Spannung.
  
 - **Zweite Harmonische** : Speziell die zweite Harmonische entsteht durch quadratische und kubische Terme in der Beziehung zwischen $$B$$ und $$H$$.
@@ -996,11 +1025,15 @@ $$
 
 ---
 
-**Visualisierung** Ein Diagramm der Magnetisierungskurve $$B(H)$$ zeigt die Nichtlinearität. Bei periodischer Anregung durch $$H_p(t)$$ führt diese Nichtlinearität zu Verzerrungen in $$B(t)$$, die Oberwellen erzeugen.
+**Visualisierung**  
+
+Ein Diagramm der Magnetisierungskurve $$B(H)$$ zeigt die Nichtlinearität. Bei periodischer Anregung durch $$H_p(t)$$ führt diese Nichtlinearität zu Verzerrungen in $$B(t)$$, die Oberwellen erzeugen.
 
 ---
 
-**Fazit:**  Die Oberwellen und insbesondere die zweite Harmonische entstehen durch die nichtlineare Beziehung zwischen magnetischer Flussdichte und Feldstärke in einem ferromagnetischen Kern, der durch ein sinusförmiges Erregerfeld in die Sättigung gebracht wird. Die Analyse dieser Harmonischen ermöglicht die genaue Messung externer Magnetfelder.
+**Fazit:** 
+
+Die Oberwellen und insbesondere die zweite Harmonische entstehen durch die nichtlineare Beziehung zwischen magnetischer Flussdichte und Feldstärke in einem ferromagnetischen Kern, der durch ein sinusförmiges Erregerfeld in die Sättigung gebracht wird. Die Analyse dieser Harmonischen ermöglicht die genaue Messung externer Magnetfelder.
 
 You: 
 
@@ -1008,97 +1041,144 @@ Welche Annahmen machst du über das erregende Signal $H_{p}(t)$ ?
 
 ChatGPT: 
 
-Thought for 13 seconds
-Making Assumptions: This text translates the user's question about the assumptions in the context of the previous explanation on the second harmonic in a fluxgate magnetometer.
-**Thought for 13 seconds
-Making Assumptions: This text translates the user's question about the assumptions in the context of the previous explanation on the second harmonic in a fluxgate magnetometer.
-Clarifying $H_p(t)$ assumptions** I’m detailing the assumptions about $$H_p(t)$$, focusing on its sinusoidal nature, amplitude, frequency, and other properties to ensure clarity and correctness.**Erregungssignal analysieren** Das Erregungsfeld $$H_p(t)$$ ist eine reine Sinusfunktion, was die mathematische Darstellung der Harmonischenbildung vereinfacht und in Praxisanwendungen geläufig ist.**Erzeugung von starken Harmonischen** Ich bin dabei, die benötigte starke Amplitude $$H_0$$ zu bestimmen, die notwendig ist, um die Sättigung des ferromagnetischen Kerns sicherzustellen. Dadurch werde ich starke Nichtlinearitäten hervorrufen, die die Entstehung der geradzahligen Harmonischen, insbesondere der zweiten Harmonischen, fördern.**Erregerstrom und Magnetfeld** 
+*Thought for 13 seconds*
+
+Making Assumptions:  
+This text translates the user's question about the assumptions in the context of the previous explanation on the second harmonic in a fluxgate magnetometer.
+
+**Clarifying $H_p(t)$ assumptions**  
+I’m detailing the assumptions about $H_p(t)$, focusing on its sinusoidal nature, amplitude, frequency, and other properties to ensure clarity and correctness.
+
+**Erregungssignal analysieren**  
+Das Erregungsfeld $H_p(t)$ ist eine reine Sinusfunktion, was die mathematische Darstellung der Harmonischenbildung vereinfacht und in Praxisanwendungen geläufig ist.
+
+**Erzeugung von starken Harmonischen**  
+Ich bin dabei, die benötigte starke Amplitude $H_0$ zu bestimmen, die notwendig ist, um die Sättigung des ferromagnetischen Kerns sicherzustellen. Dadurch werde ich starke Nichtlinearitäten hervorrufen, die die Entstehung der geradzahligen Harmonischen, insbesondere der zweiten Harmonischen, fördern.
+
+**Erregerstrom und Magnetfeld**  
 Ich gehe davon aus, dass die Magnetisierung innerhalb des Kerns gleichmäßig verläuft. Dies macht die Berechnungen einfacher, da räumliche Unterschiede des Feldes irrelevant werden.
-**Berücksichtigung von signifikanten Punkten** Ich schaue mir die Taylor-Reihe von $$B(H)$$ bis zur dritten Ordnung an, um die Haupteffekte ohne höhere Ordnungseffekte zu verstehen.**Betrachte stationäre Bedingungen** 
+
+**Berücksichtigung von signifikanten Punkten**  
+Ich schaue mir die Taylor-Reihe von $B(H)$ bis zur dritten Ordnung an, um die Haupteffekte ohne höhere Ordnungseffekte zu verstehen.
+
+**Betrachte stationäre Bedingungen**  
 Ich nehme an, dass das Erregungssignal zeitlich stabil ist, was eine zeitinvariante Analyse ermöglicht und die Verwendung von Fourier-Analysen erleichtert. Dies führt zu einer klaren mathematischen Untersuchung der Frequenzkomponenten.
-**Thought for 13 seconds
-Making Assumptions: This text translates the user's question about the assumptions in the context of the previous explanation on the second harmonic in a fluxgate magnetometer.
-**Thought for 13 seconds
-Making Assumptions: This text translates the user's question about the assumptions in the context of the previous explanation on the second harmonic in a fluxgate magnetometer.
-Clarifying $H_p(t)$ assumptions** I’m detailing the assumptions about $H_p(t)$, focusing on its sinusoidal nature, amplitude, frequency, and other properties to ensure clarity and correctness.**Erregungssignal analysieren** Das Erregungsfeld $H_p(t)$ ist eine reine Sinusfunktion, was die mathematische Darstellung der Harmonischenbildung vereinfacht und in Praxisanwendungen geläufig ist.**Erzeugung von starken Harmonischen** Ich bin dabei, die benötigte starke Amplitude $H_0$ zu bestimmen, die notwendig ist, um die Sättigung des ferromagnetischen Kerns sicherzustellen. Dadurch werde ich starke Nichtlinearitäten hervorrufen, die die Entstehung der geradzahligen Harmonischen, insbesondere der zweiten Harmonischen, fördern.**Erregerstrom und Magnetfeld** 
-Ich gehe davon aus, dass die Magnetisierung innerhalb des Kerns gleichmäßig verläuft. Dies macht die Berechnungen einfacher, da räumliche Unterschiede des Feldes irrelevant werden.
-**Berücksichtigung von signifikanten Punkten** Ich schaue mir die Taylor-Reihe von $B(H)$ bis zur dritten Ordnung an, um die Haupteffekte ohne höhere Ordnungseffekte zu verstehen.**Betrachte stationäre Bedingungen** 
-Ich nehme an, dass das Erregungssignal zeitlich stabil ist, was eine zeitinvariante Analyse ermöglicht und die Verwendung von Fourier-Analysen erleichtert. Dies führt zu einer klaren mathematischen Untersuchung der Frequenzkomponenten.
-Annahmen über das Erregungssignal $H_p(t)$ im Fluxgate-Magnetometer** In meiner vorherigen Erklärung zur Entstehung der Oberwellen und insbesondere der zweiten Harmonischen im Fluxgate-Magnetometer habe ich bestimmte Annahmen über das Erregungssignal $$H_p(t)$$ gemacht. Diese Annahmen sind entscheidend für die mathematische Herleitung und das Verständnis des Messprinzips.
+
+**Annahmen über das Erregungssignal $H_p(t)$ im Fluxgate-Magnetometer**  
+In meiner vorherigen Erklärung zur Entstehung der Oberwellen und insbesondere der zweiten Harmonischen im Fluxgate-Magnetometer habe ich bestimmte Annahmen über das Erregungssignal $$H_p(t)$$ gemacht. Diese Annahmen sind entscheidend für die mathematische Herleitung und das Verständnis des Messprinzips.
 
 ---
 
-**1. Sinusförmiges Erregungssignal** **Annahme:** Das Erregungsfeld $$H_p(t)$$ ist eine reine Sinusfunktion der Zeit:$$
- H_p(t) = H_0 \sin(\omega t) 
-$$
+**1. Sinusförmiges Erregungssignal** 
+
+**Annahme:**  
+Das Erregungsfeld $$H_p(t)$$ ist eine reine Sinusfunktion der Zeit:
+
+$$H_p(t) = H_0 \sin(\omega t)$$
  
 - **$H_0$** : Amplitude des Erregungsfeldes
  
 - **$\omega$** : Kreisfrequenz des Erregungssignals
-**Begründung:** 
+
+**Begründung:**  
 Ein sinusförmiges Erregungssignal ist mathematisch einfach zu handhaben und erlaubt die Anwendung von Fourier-Analysen zur Untersuchung der Frequenzkomponenten. Zudem wird in praktischen Fluxgate-Magnetometern häufig ein sinusförmiger Strom verwendet, um eine effiziente Anregung des Kerns zu gewährleisten.
 
 
 ---
 
-**2. Ausreichende Amplitude für Sättigung** **Annahme:** Die Amplitude $$H_0$$ ist groß genug, um den ferromagnetischen Kern periodisch in die Sättigung zu bringen.**Begründung:** 
+**2. Ausreichende Amplitude für Sättigung** 
+
+**Annahme:**  
+Die Amplitude $$H_0$$ ist groß genug, um den ferromagnetischen Kern periodisch in die Sättigung zu bringen.
+
+**Begründung:**  
 Die Sättigung des Kerns ist notwendig, um die starken Nichtlinearitäten in der Magnetisierungskurve auszunutzen. Ohne Sättigung wären die Nichtlinearitäten schwächer, und die erzeugten Oberwellen, insbesondere die zweite Harmonische, wären weniger ausgeprägt.
 
 
 ---
 
-**3. Vernachlässigung von Verlusten und Verzerrungen** **Annahme:** 
+**3. Vernachlässigung von Verlusten und Verzerrungen** 
+
+**Annahme:**  
 Das Erregungssignal bleibt unverzerrt während der Anregung des Kerns, d.h., es gibt keine signifikanten harmonischen Verzerrungen oder Phasenverschiebungen aufgrund von Kernverlusten oder Wicklungsimpedanzen.
-**Begründung:** 
+
+**Begründung:**  
 Dies vereinfacht die mathematische Analyse, da man sich auf die Nichtlinearitäten des Kerns konzentrieren kann, ohne zusätzliche Komplexitäten durch Verzerrungen im Erregungssignal berücksichtigen zu müssen.
 
 
 ---
 
-**4. Homogenes Magnetfeld im Kern** **Annahme:** Das erzeugte Magnetfeld $$H_p(t)$$ ist innerhalb des Kerns räumlich homogen.**Begründung:** 
+**4. Homogenes Magnetfeld im Kern** 
+
+**Annahme:**  
+Das erzeugte Magnetfeld $$H_p(t)$$ ist innerhalb des Kerns räumlich homogen.
+
+**Begründung:**  
 Ein homogenes Feld erlaubt es, das Problem eindimensional zu behandeln und räumliche Variationen des Feldes zu vernachlässigen. Dies vereinfacht die mathematische Modellierung erheblich.
 
 
 ---
 
-**5. Vernachlässigung der Rückwirkung des Sekundärstroms** **Annahme:** 
+**5. Vernachlässigung der Rückwirkung des Sekundärstroms** 
+
+**Annahme:**  
 Der durch die induzierte Spannung in der Sekundärwicklung erzeugte Strom ist vernachlässigbar klein und beeinflusst das Erregungsfeld nicht.
-**Begründung:** Dies bedeutet, dass das Erregungsfeld $$H_p(t)$$ ausschließlich durch den Primärstrom bestimmt wird und nicht durch die Reaktion der Sekundärwicklung. Dies ist eine übliche Annahme in der Analyse von Transformatoren und Magnetometern im Leerlauf oder mit hochohmiger Last.
+
+**Begründung:**  
+Dies bedeutet, dass das Erregungsfeld $$H_p(t)$$ ausschließlich durch den Primärstrom bestimmt wird und nicht durch die Reaktion der Sekundärwicklung. Dies ist eine übliche Annahme in der Analyse von Transformatoren und Magnetometern im Leerlauf oder mit hochohmiger Last.
 
 ---
 
-**6. Linearität des Erregerstroms** **Annahme:** Der Erregerstrom $$I_p(t)$$ ist proportional zum Erregungsfeld $$H_p(t)$$ und somit ebenfalls sinusförmig:$$
- I_p(t) = I_0 \sin(\omega t) 
-$$
-**Begründung:** 
+**6. Linearität des Erregerstroms** 
+
+**Annahme:**  
+Der Erregerstrom $$I_p(t)$$ ist proportional zum Erregungsfeld $$H_p(t)$$ und somit ebenfalls sinusförmig:
+
+$$I_p(t) = I_0 \sin(\omega t)$$
+
+**Begründung:**   
 Diese Annahme ist gerechtfertigt, wenn die magnetische Suszeptibilität des Kerns hoch ist und die Wicklungsinduktivität dominiert, wodurch der Strom sinusförmig bleibt.
 
 
 ---
 
-**7. Keine Wechselwirkung mit dem externen Feld** **Annahme:** Das externe Magnetfeld $$H_{\text{ext}}$$ beeinflusst das Erregungssignal $$H_p(t)$$ nicht direkt.**Begründung:** 
+**7. Keine Wechselwirkung mit dem externen Feld** 
+
+**Annahme:**  
+Das externe Magnetfeld $$H_{\text{ext}}$$ beeinflusst das Erregungssignal $$H_p(t)$$ nicht direkt.
+
+**Begründung:**   
 Dies erlaubt es, das externe Feld als additive Komponente zum Erregungsfeld zu betrachten, ohne komplexe Wechselwirkungen berücksichtigen zu müssen.
 
 
 ---
 
-**8. Stationäres und zeitlich konstantes Erregungssignal** **Annahme:** 
+**8. Stationäres und zeitlich konstantes Erregungssignal** 
+
+**Annahme:**  
 Das Erregungssignal hat eine konstante Amplitude und Frequenz über die Zeit.
-**Begründung:** 
+
+**Begründung:**  
 Dies erleichtert die Anwendung der Fourier-Analyse und die Herleitung der Frequenzkomponenten, da das System zeitinvariant ist.
 
 
 ---
 
-**9. Vernachlässigung der Temperaturabhängigkeit** **Annahme:** 
+**9. Vernachlässigung der Temperaturabhängigkeit** 
+
+**Annahme:**  
 Die magnetischen Eigenschaften des Kerns und die Eigenschaften des Erregungssignals sind temperaturunabhängig.
-**Begründung:** 
+
+**Begründung:**  
 Temperaturabhängigkeiten würden zusätzliche Variablen einführen, die die Analyse verkomplizieren.
 
 
 ---
 
-**Zusammenfassung der Annahmen** Die Hauptannahmen über das Erregungssignal $$H_p(t)$$ sind: 
+**Zusammenfassung der Annahmen** 
+
+Die Hauptannahmen über das Erregungssignal $$H_p(t)$$ sind: 
+
 - **Sinusförmigkeit** : $$H_p(t)$$ ist eine reine Sinusfunktion der Zeit.
  
 - **Ausreichende Amplitude** : $$H_0$$ ist groß genug, um den Kern in die Sättigung zu bringen.
@@ -1115,6 +1195,7 @@ Temperaturabhängigkeiten würden zusätzliche Variablen einführen, die die Ana
 ---
 
 **Einfluss dieser Annahmen auf die Herleitung** 
+
 Diese Annahmen sind entscheidend, um die mathematische Herleitung zu vereinfachen und die Entstehung der zweiten Harmonischen klar darzustellen:
  
 - **Sinusförmigkeit**  ermöglicht die Anwendung von bekannten trigonometrischen Identitäten und Fourier-Analysen.
@@ -1127,6 +1208,7 @@ Diese Annahmen sind entscheidend, um die mathematische Herleitung zu vereinfache
 ---
 
 **Praktische Relevanz der Annahmen** 
+
 In realen Fluxgate-Magnetometern können einige dieser Annahmen nur näherungsweise gelten:
  
 - **Verzerrungen im Erregungssignal**  können durch nichtideale Stromquellen oder durch nichtlineare Effekte in den Wicklungen auftreten.
@@ -1140,7 +1222,9 @@ Dennoch sind diese Annahmen für eine erste theoretische Analyse und das grundle
 
 ---
 
-**Fazit** Die Annahmen über das Erregungssignal $$H_p(t)$$ sind wesentlich für die Herleitung der Entstehung der Oberwellen im Fluxgate-Magnetometer. Sie ermöglichen es, die komplexen nichtlinearen Phänomene mathematisch zu modellieren und zu verstehen, wie die zweite Harmonische als Maß für das externe Magnetfeld genutzt werden kann.
+**Fazit**  
+
+Die Annahmen über das Erregungssignal $$H_p(t)$$ sind wesentlich für die Herleitung der Entstehung der Oberwellen im Fluxgate-Magnetometer. Sie ermöglichen es, die komplexen nichtlinearen Phänomene mathematisch zu modellieren und zu verstehen, wie die zweite Harmonische als Maß für das externe Magnetfeld genutzt werden kann.
 
 ---
 
