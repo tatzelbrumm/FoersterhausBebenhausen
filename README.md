@@ -68,6 +68,13 @@ Musings on testing of metal and biological objects
 
 * [Oct 31, 2024 10-40-47 AM Magnetische Gleichfeldmessung Anwendung.md](Oct%2031%2C%202024%2010-40-47%20AM%20Magnetische%20Gleichfeldmessung%20Anwendung.md)
 
+## Kramer? Voll der Hammer!
+
+* [Oct 31, 2024 09-09-47 PM &Uuml;bersetzung von Kramers Hammer.md](Oct%2031%2C%202024%2009-09-47%20PM%20%C3%9Cbersetzung%20von%20Kramers%20Hammer.md)
+* [Oct 31, 2024 09-14-26 PM &Uuml;bersetzung von Kramers Hammer.md](Oct%2031%2C%202024%2009-14-26%20PM%20%C3%9Cbersetzung%20von%20Kramers%20Hammer.md)
+* [Oct 31, 2024 09-17-25 PM &Uuml;bersetzung von Kramers Hammer.md](Oct%2031%2C%202024%2009-17-25%20PM%20%C3%9Cbersetzung%20von%20Kramers%20Hammer.md)
+
 ## Marvin sieht infrarot
 
 * [Oct 31, 2024 08-54-10 PM Gedichtanalyse und Inspiration.md](Oct%2031%2C%202024%2008-54-10%20PM%20Gedichtanalyse%20und%20Inspiration.md)
+* [Oct 31, 2024 09-00-37 PM Gedichtanalyse und Inspiration.md](Oct%2031%2C%202024%2009-00-37%20PM%20Gedichtanalyse%20und%20Inspiration.md)
