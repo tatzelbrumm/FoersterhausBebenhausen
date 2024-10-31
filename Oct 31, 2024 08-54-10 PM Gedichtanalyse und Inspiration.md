@@ -58,10 +58,17 @@ Try to find the Now I Lay Me Down to Sleep quote by Marvin the Paranoid Android 
 ChatGPT: 
 
 In *The Hitchhiker's Guide to the Galaxy* series by Douglas Adams, Marvin the Paranoid Android composes a melancholic lullaby that parodies the traditional bedtime prayer "Now I lay me down to sleep." Marvin's version reflects his characteristic gloom and technological nature:
-> Now I lay me down to sleep,
-Try to count electric sheep,
-Sweet dream wishes you can keep,
-How I hate the night.This verse showcases Marvin's perpetual dissatisfaction and his unique perspective as a robot. The reference to "counting electric sheep" alludes to Philip K. Dick's novel *Do Androids Dream of Electric Sheep?*, further emphasizing the connection between artificial intelligence and the concept of dreaming. [GOODREADS](https://www.goodreads.com/quotes/148185-having-solved-all-the-major-mathematical-physical-chemical-biological-sociological) 
+> Now the world has gone to bed,  
+Darkness won't engulf my head,  
+I can see by infrared,  
+How I hate the night.  
+>  
+> Now I lay me down to sleep,  
+Try to count electric sheep,  
+Sweet dream wishes you can keep,  
+How I hate the night.
+
+This verse showcases Marvin's perpetual dissatisfaction and his unique perspective as a robot. The reference to "counting electric sheep" alludes to Philip K. Dick's novel *Do Androids Dream of Electric Sheep?*, further emphasizing the connection between artificial intelligence and the concept of dreaming. [GOODREADS](https://www.goodreads.com/quotes/148185-having-solved-all-the-major-mathematical-physical-chemical-biological-sociological) 
 Sources![Favicon](https://www.google.com/s2/favicons?domain=https://www.goodreads.com&sz=32)
 
 You: 
