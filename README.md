@@ -64,3 +64,10 @@ Musings on testing of metal and biological objects
 * [Oct 26, 2024 12-21-18 PM Putt's Law Explained.md](Oct%2026%2C%202024%2012-21-18%20PM%20Putt's%20Law%20Explained.md)
 * [Oct 26, 2024 01-25-24 PM Putt's Law Explained.md](Oct%2026%2C%202024%2001-25-24%20PM%20Putt's%20Law%20Explained.md)
 
+## [Oberförster Pudlich](https://www.youtube.com/watch?v=Mpc2ZUOflNI)s Literaturrecherche
+
+* [Oct 31, 2024 10-40-47 AM Magnetische Gleichfeldmessung Anwendung.md](Oct%2031%2C%202024%2010-40-47%20AM%20Magnetische%20Gleichfeldmessung%20Anwendung.md)
+
+## Marvin sieht infrarot
+
+* [Oct 31, 2024 08-54-10 PM Gedichtanalyse und Inspiration.md](Oct%2031%2C%202024%2008-54-10%20PM%20Gedichtanalyse%20und%20Inspiration.md)
