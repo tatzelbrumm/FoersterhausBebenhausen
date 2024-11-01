@@ -1,0 +1,204 @@
+#include <stdint.h>
+
+void qosc(const int16_t *coeff, int16_t *accu, uint16_t n_1, int16_t **result) {
+    // Extract coefficients
+    int16_t power = coeff[0];
+    int16_t re_coeff = coeff[1];
+    int16_t im_coeff = coeff[2];
+
+    // Initialize real and imaginary parts of accumulator
+    int16_t accu_re = accu[0];
+    int16_t accu_im = accu[1];
+
+    // Loop through the iterations
+    for (uint16_t i = 0; i <= n_1; i++) {
+        // Store the current accumulator values in the result arrays
+        result[0][i] = accu_re;
+        result[1][i] = accu_im;
+
+        // Compute the next accumulator values using the coefficients
+        int32_t temp_re = (int32_t)accu_re * re_coeff - (int32_t)accu_im * im_coeff;
+        int32_t temp_im = (int32_t)accu_re * im_coeff + (int32_t)accu_im * re_coeff;
+
+        int16_t tmph_re = temp_re >> 15;
+        int16_t tmph_im = temp_im >> 15;
+
+        // Compute the square and subtract operation
+        int32_t ac3 = power << 16; // Load target power into AC3
+        ac3 -= tmph_re * tmph_re;  // Subtract the square of the real part
+        ac3 -= tmph_im * tmph_im;  // Subtract the square of the imaginary part
+
+        // Extract high part of AC3 and use it to scale results
+        int16_t t0 = (int16_t)(ac3 >> 16);
+        temp_re += tmph_re * t0;
+        temp_im += tmph_im * t0;
+
+        // Update the accumulator with the new values
+        accu_re = (int16_t)(temp_re >> 15);
+        accu_im = (int16_t)(temp_im >> 15);
+    }
+
+    // Update the original accumulator values
+    accu[0] = accu_re;
+    accu[1] = accu_im;
+}
+
+/*
+Mathematical Notation:
+1. Initialize accumulator values:
+   Re_acc = accu[0]
+   Im_acc = accu[1]
+
+2. For each iteration (i = 0 to n_1):
+   a. Store current values:
+      result[0][i] = Re_acc
+      result[1][i] = Im_acc
+
+   b. Compute next accumulator values:
+      Temp_Re = Re_acc * Re_coeff - Im_acc * Im_coeff
+      Temp_Im = Re_acc * Im_coeff + Im_acc * Re_coeff
+
+   c. Scale down to Q15 format:
+      Tmph_Re = Temp_Re >> 15
+      Tmph_Im = Temp_Im >> 15
+
+   d. Square and subtract operation:
+      AC3 = Power << 16
+      AC3 -= Tmph_Re^2
+      AC3 -= Tmph_Im^2
+
+   e. Extract high part of AC3 and use it to scale results:
+      T0 = AC3 >> 16
+      Temp_Re += Tmph_Re * T0
+      Temp_Im += Tmph_Im * T0
+
+   f. Scale back to Q15 format:
+      Re_acc = Temp_Re >> 15
+      Im_acc = Temp_Im >> 15
+
+3. Update original accumulator values:
+   accu[0] = Re_acc
+   accu[1] = Im_acc
+
+TeX-ier Version:
+1. Initialize accumulator values:
+   \begin{align*}
+   \text{Re}_{\text{acc}} &= \text{accu}[0] \\
+   \text{Im}_{\text{acc}} &= \text{accu}[1]
+   \end{align*}
+
+2. For each iteration (i = 0 to n_1):
+   \begin{align*}
+   \text{a. Store current values:} & \\
+   \text{result}[0][i] &= \text{Re}_{\text{acc}} \\
+   \text{result}[1][i] &= \text{Im}_{\text{acc}} \\
+   \\
+   \text{b. Compute next accumulator values:} & \\
+   \text{Temp}_{\text{Re}} &= \text{Re}_{\text{acc}} \times \text{Re}_{\text{coeff}} - \text{Im}_{\text{acc}} \times \text{Im}_{\text{coeff}} \\
+   \text{Temp}_{\text{Im}} &= \text{Re}_{\text{acc}} \times \text{Im}_{\text{coeff}} + \text{Im}_{\text{acc}} \times \text{Re}_{\text{coeff}} \\
+   \\
+   \text{c. Scale down to Q15 format:} & \\
+   \text{Tmph}_{\text{Re}} &= \frac{\text{Temp}_{\text{Re}}}{2^{15}} \\
+   \text{Tmph}_{\text{Im}} &= \frac{\text{Temp}_{\text{Im}}}{2^{15}} \\
+   \\
+   \text{d. Square and subtract operation:} & \\
+   \text{AC3} &= \text{Power} \times 2^{16} \\
+   \text{AC3} &-= \text{Tmph}_{\text{Re}}^2 \\
+   \text{AC3} &-= \text{Tmph}_{\text{Im}}^2 \\
+   \\
+   \text{e. Extract high part of AC3 and use it to scale results:} & \\
+   \text{T0} &= \frac{\text{AC3}}{2^{16}} \\
+   \text{Temp}_{\text{Re}} &+= \text{Tmph}_{\text{Re}} \times \text{T0} \\
+   \text{Temp}_{\text{Im}} &+= \text{Tmph}_{\text{Im}} \times \text{T0} \\
+   \\
+   \text{f. Scale back to Q15 format:} & \\
+   \text{Re}_{\text{acc}} &= \frac{\text{Temp}_{\text{Re}}}{2^{15}} \\
+   \text{Im}_{\text{acc}} &= \frac{\text{Temp}_{\text{Im}}}{2^{15}}
+   \end{align*}
+
+3. Update original accumulator values:
+   \begin{align*}
+   \text{accu}[0] &= \text{Re}_{\text{acc}} \\
+   \text{accu}[1] &= \text{Im}_{\text{acc}}
+   \end{align*}
+*/
+
+import numpy as np
+import math
+import matplotlib.pyplot as plt
+
+def qosc_iteration(coeff, accu):
+    # Extract coefficients
+    power = coeff[0]
+    re_coeff = coeff[1]
+    im_coeff = coeff[2]
+
+    # Compute the next accumulator values using the coefficients
+    temp_re = int(accu[0]) * re_coeff - int(accu[1]) * im_coeff
+    temp_im = int(accu[0]) * im_coeff + int(accu[1]) * re_coeff
+
+    tmph_re = temp_re >> 15
+    tmph_im = temp_im >> 15
+
+    # Compute the square and subtract operation
+    ac3 = power << 16  # Load target power into AC3
+    ac3 -= tmph_re * tmph_re  # Subtract the square of the real part
+    ac3 -= tmph_im * tmph_im  # Subtract the square of the imaginary part
+
+    # Extract high part of AC3 and use it to scale results
+    t0 = (ac3 >> 16) & 0xFFFF
+    temp_re += tmph_re * t0
+    temp_im += tmph_im * t0
+
+    # Update the accumulator with the new values
+    accu[0] = temp_re >> 15
+    accu[1] = temp_im >> 15
+
+def qosc(coeff, accu, n_1):
+    # Prepare storage for results
+    result_re = []
+    result_im = []
+
+    # Loop through the iterations
+    for i in range(n_1 + 1):
+        # Store the current accumulator values in the result arrays
+        result_re.append(accu[0])
+        result_im.append(accu[1])
+
+        # Perform one iteration
+        qosc_iteration(coeff, accu)
+
+    return result_re, result_im
+
+# Test environment
+def test_qosc():
+    # Set coefficients for a 12-degree rotation
+    angle_rad = math.radians(12)
+    re_coeff = int(math.cos(angle_rad) * (1 << 15))  # Q15 format
+    im_coeff = int(math.sin(angle_rad) * (1 << 15))  # Q15 format
+    power = 14142  # Adjusted power to match initial magnitude of accumulator
+
+    # Test coefficients {power, re_coeff, im_coeff}
+    coeff = [power, re_coeff, im_coeff]
+    # Initial accumulator values {real, imaginary}, matching the target power
+    accu = [int(power / math.sqrt(2)), int(power / math.sqrt(2))]
+    # Number of iterations - 1
+    n_1 = 1000
+
+    # Run quadrature oscillator
+    result_re, result_im = qosc(coeff, accu, n_1)
+
+    # Plot results
+    plt.figure(figsize=(10, 5))
+    plt.plot(result_re, label='Real Part')
+    plt.plot(result_im, label='Imaginary Part')
+    plt.xlabel('Iteration')
+    plt.ylabel('Amplitude')
+    plt.title('Quadrature Oscillator Output')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
+# Run the test
+test_qosc()
+
