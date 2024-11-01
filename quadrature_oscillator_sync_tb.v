@@ -12,7 +12,7 @@ module quadrature_oscillator_sync_tb;
     wire signed [15:0] accu_im;
 
     // Number of iterations
-    integer num_iterations = 10;  // Specify the number of iterations here
+    integer num_iterations = 1000;  // Specify the number of iterations here
     integer i;
 
     // Instantiate the quadrature oscillator module
@@ -51,7 +51,7 @@ module quadrature_oscillator_sync_tb;
         // Run for the specified number of iterations
         for (i = 0; i < num_iterations; i = i + 1) begin
             #10;  // Wait for 1 clock cycle per iteration
-            $display("Iteration %0d: accu_re = %d, accu_im = %d", i, accu_re, accu_im);
+            $display("%0d, %d, %d", i, accu_re, accu_im);
         end
 
         // End simulation
