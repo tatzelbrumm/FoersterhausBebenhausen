@@ -44,7 +44,7 @@ Searched 1 siteDer Artikel „Ein Verfahren zur Messung von magnetischen Gleichf
 You: 
 
 Foerster1988.pdf
-PDF
+[PDF](./Foerster1988.pdf)
 
 Mir hat sich angesichts einer "human resources"-Verlautbarung, dass sie Angestellte suchen, die sich mit einem kostenlosen Frühstück und „Teamgeist“ abspeisen lassen, ziemlich der Magen umgedreht.
 Deshalb bin ich zu faul, den hochgeladenen Artikel selber gründlich durchzulesen.
