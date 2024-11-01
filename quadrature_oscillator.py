@@ -56,21 +56,26 @@ def qosc(coeff, accu, n_1):
 
 # Test environment
 def test_qosc():
-    # Set coefficients for a 12-degree rotation
-    angle_rad = math.radians(12)
+    # Set coefficients for a 30-degree rotation
+    angle_rad = math.radians(30)
     re_coeff = int(math.cos(angle_rad) * (1 << 15))  # Q15 format
     im_coeff = int(math.sin(angle_rad) * (1 << 15))  # Q15 format
-    power = 14142  # Adjusted power to match initial magnitude of accumulator
+    power = 1000000  # Adjusted power to match initial magnitude of accumulator
 
     # Test coefficients {power, re_coeff, im_coeff}
     coeff = [power, re_coeff, im_coeff]
     # Initial accumulator values {real, imaginary}, matching the target power
-    accu = [int(power / math.sqrt(2)), int(power / math.sqrt(2))]
+    accu = [int(math.sqrt(power / 2)), int(math.sqrt(power / 2))]
     # Number of iterations - 1
-    n_1 = 1000
+    n_1 = 10
+
+    print([re_coeff, im_coeff])
+    print(accu)
 
     # Run quadrature oscillator
     result_re, result_im = qosc(coeff, accu, n_1)
+
+    print(result_re, result_im)
 
     # Plot results
     plt.figure(figsize=(10, 5))
