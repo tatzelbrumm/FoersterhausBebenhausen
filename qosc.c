@@ -1,3 +1,6 @@
+#include <stdint.h>
+#include <stdio.h>
+
 #define AMPLITUDE 10000      // Maximum amplitude
 #define FREQUENCY 327        // Frequency control, in range (0 < FREQUENCY < 65536)
 
@@ -11,7 +14,7 @@ int main() {
     int32_t new_cosine;
 
     // Simulating the oscillator
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 10000; i++) {
         // Calculate the new values using fixed-point arithmetic
         new_sine = sine + ((cosine * FREQUENCY) >> 15);
         new_cosine = cosine - ((sine * FREQUENCY) >> 15);
@@ -21,7 +24,8 @@ int main() {
         cosine = new_cosine;
 
         // Print the current values (scaled back to the original range)
-        printf("Step %d: Sine = %d, Cosine = %d\n", i, sine, cosine);
+        //printf("Step %d: Sine = %d, Cosine = %d\n", i, sine, cosine);
+        printf("%d, %d, %d\n", i, sine, cosine);
     }
 
     return 0;
