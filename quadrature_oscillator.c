@@ -30,8 +30,8 @@ void qosc(const int16_t *coeff, int16_t *accu, uint16_t n_1, int16_t **result) {
 
         // Extract high part of AC3 and use it to scale results
         int16_t t0 = (int16_t)(ac3 >> 16);
-//      temp_re += tmph_re * t0;
-//      temp_im += tmph_im * t0;
+        temp_re += tmph_re * t0;
+        temp_im += tmph_im * t0;
 
         // Update the accumulator with the new values
         accu_re = (int16_t)(temp_re >> 15);

@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <math.h>
 
-#define ITERATIONS 1000
+#define ITERATIONS 500
 
 void qosc(const int16_t *coeff, int16_t *accu, uint16_t n_1, int16_t **result);
 
@@ -12,13 +12,13 @@ int main() {
     double angle_rad = 12.0 * M_PI / 180.0;
     int16_t re_coeff = (int16_t)(cos(angle_rad) * (1 << 15));
     int16_t im_coeff = (int16_t)(sin(angle_rad) * (1 << 15));
-    int16_t power = 14142; // Adjusted power to match initial magnitude of accumulator
+    int16_t power = 1024; // Adjusted power to match initial magnitude of accumulator
 
     // Coefficients array {power, re_coeff, im_coeff}
     int16_t coeff[] = { power, re_coeff, im_coeff };
 
     // Initial accumulator values {real, imaginary}, matching the target power
-    int16_t accu[] = { (int16_t)(power / sqrt(2)), (int16_t)(power / sqrt(2)) };
+    int16_t accu[] = { 1024, 0 };
 
     // Allocate result arrays for real and imaginary parts
     int16_t *result[2];
