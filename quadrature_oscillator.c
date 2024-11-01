@@ -20,22 +20,22 @@ void qosc(const int16_t *coeff, int16_t *accu, uint16_t n_1, int16_t **result) {
         int32_t temp_re = (int32_t)accu_re * re_coeff - (int32_t)accu_im * im_coeff;
         int32_t temp_im = (int32_t)accu_re * im_coeff + (int32_t)accu_im * re_coeff;
 
+        int16_t tmph_re = temp_re >> 15;
+        int16_t tmph_im = temp_im >> 15;
+
         // Compute the square and subtract operation
         int32_t ac3 = power << 16; // Load target power into AC3
-        ac3 -= temp_re * temp_re;  // Subtract the square of the real part
-        ac3 -= temp_im * temp_im;  // Subtract the square of the imaginary part
-
-        int16_t tmph_re = temp_re >> 16;
-        int16_t tmph_im = temp_re >> 16;
+        ac3 -= tmph_re * tmph_re;  // Subtract the square of the real part
+        ac3 -= tmph_im * tmph_im;  // Subtract the square of the imaginary part
 
         // Extract high part of AC3 and use it to scale results
         int16_t t0 = (int16_t)(ac3 >> 16);
-        temp_re += tmph_re * t0;
-        temp_im += tmph_im * t0;
+//      temp_re += tmph_re * t0;
+//      temp_im += tmph_im * t0;
 
         // Update the accumulator with the new values
-        accu_re = (int16_t)(temp_re >> 16);
-        accu_im = (int16_t)(temp_im >> 16);
+        accu_re = (int16_t)(temp_re >> 15);
+        accu_im = (int16_t)(temp_im >> 15);
     }
 
     // Update the original accumulator values
