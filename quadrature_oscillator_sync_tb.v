@@ -37,11 +37,11 @@ module quadrature_oscillator_sync_tb;
     // Test procedure
     initial begin
         // Initialize parameters
-        re_coeff = 16'h4000;  // Example real coefficient
-        im_coeff = 16'h2000;  // Example imaginary coefficient
-        power = 16'h1000;     // Target power level
-        accu_re_init = 16'h3000;  // Initial accumulator real part
-        accu_im_init = 16'h1000;  // Initial accumulator imaginary part
+        re_coeff = 16'h7d34;  // Example real coefficient
+        im_coeff = 16'h1a9d;  // Example imaginary coefficient
+        power = 16'h400;      // Target power level
+        accu_re_init = 16'h400;  // Initial accumulator real part
+        accu_im_init = 16'h0;    // Initial accumulator imaginary part
 
         // Preload the oscillator with initial values
         load = 1;
