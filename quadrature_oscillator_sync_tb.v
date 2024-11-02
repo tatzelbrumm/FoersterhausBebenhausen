@@ -36,6 +36,8 @@ module quadrature_oscillator_sync_tb;
 
     // Test procedure
     initial begin
+        $dumpfile("quadrature_oscillator_sync_tb.vcd");  // Specify the output VCD file
+        $dumpvars(0, quadrature_oscillator_sync_tb);     // Dump all variables in the testbench
         // Initialize parameters
         re_coeff = 16'h7d34;  // Example real coefficient
         im_coeff = 16'h1a9d;  // Example imaginary coefficient
