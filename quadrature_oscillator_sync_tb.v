@@ -40,7 +40,7 @@ module quadrature_oscillator_sync_tb;
         re_coeff = 16'h7d34;  // Example real coefficient
         im_coeff = 16'h1a9d;  // Example imaginary coefficient
         power = 16'h400;      // Target power level
-        accu_re_init = 16'h400;  // Initial accumulator real part
+        accu_re_init = 16'h20;  // Initial accumulator real part
         accu_im_init = 16'h0;    // Initial accumulator imaginary part
 
         // Preload the oscillator with initial values
@@ -51,7 +51,7 @@ module quadrature_oscillator_sync_tb;
         // Run for the specified number of iterations
         for (i = 0; i < num_iterations; i = i + 1) begin
             #10;  // Wait for 1 clock cycle per iteration
-            $display("%0d, %d, %d", i, accu_re, accu_im);
+            $display("%d, %d, %d", i, accu_re, accu_im);
         end
 
         // End simulation
