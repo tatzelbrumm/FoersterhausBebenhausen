@@ -12,8 +12,8 @@ def qosc_iteration(coeff, accu):
     temp_re = int(accu[0]) * re_coeff - int(accu[1]) * im_coeff
     temp_im = int(accu[0]) * im_coeff + int(accu[1]) * re_coeff
 
-    tmph_re = temp_re >> 15 & 0xFFFF
-    tmph_im = temp_im >> 15 & 0xFFFF
+    tmph_re = (temp_re >> 15) & 0xFFFF
+    tmph_im = (temp_im >> 15) & 0xFFFF
 
     # Compute the square and subtract operation
     ac3 = power << 16  # Load target power into AC3
@@ -22,8 +22,8 @@ def qosc_iteration(coeff, accu):
 
     # Extract high part of AC3 and use it to scale results
     t0 = (ac3 >> 16) & 0xFFFF
-    temp_re += tmph_re * t0
-    temp_im += tmph_im * t0
+#    temp_re += tmph_re * t0
+#    temp_im += tmph_im * t0
 
     # Update the accumulator with the new values
     accu[0] = temp_re >> 15
@@ -48,15 +48,15 @@ def qosc(coeff, accu, n_1):
 # Test environment
 def test_qosc():
     # Set coefficients for a 12-degree rotation
-    angle_rad = math.radians(12)
-    re_coeff = int(math.cos(angle_rad) * (1 << 15))  # Q15 format
-    im_coeff = int(math.sin(angle_rad) * (1 << 15))  # Q15 format
+    # angle_rad = math.radians(12)
+    re_coeff = 32052 # int(math.cos(angle_rad) * (1 << 15))  # Q15 format
+    im_coeff =  6813 # int(math.sin(angle_rad) * (1 << 15))  # Q15 format
     power = 1024  # Adjusted power to match initial magnitude of accumulator
 
     # Test coefficients {power, re_coeff, im_coeff}
     coeff = [power, re_coeff, im_coeff]
     # Initial accumulator values {real, imaginary}, matching the target power
-    accu = [ 1024, 0]
+    accu = [ 2048, -2048 ]
     # Number of iterations - 1
     n_1 = 1000
 
