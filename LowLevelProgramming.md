@@ -527,7 +527,7 @@ Let's reanalyze the code segment with this information.
 
 **Revised Analysis of the `sqs` Instruction**
 
-According to the TI C55x instruction set manual, the `sqs`**  instruction performs a **square and subtract**  operation, where it calculates the square of the source operand and subtracts it from the destination register.
+According to the TI C55x instruction set manual, the **`sqs`**  instruction performs a **square and subtract**  operation, where it calculates the square of the source operand and subtracts it from the destination register.
 
 ### Code Segment 
 
@@ -801,7 +801,7 @@ set grid
 plot "qosc_output.dat" using 1:2 with lines title "Real Part", \
      "qosc_output.dat" using 1:3 with lines title "Imaginary Part"
 ```
-Save this script as `qosc_plot.gp` and then run it in Gnuplot using:
+Save this script as [`qosc_plot.gp`](qosc_plot.gp) and then run it in Gnuplot using:
 
 ```sh
 gnuplot -p qosc_plot.gp
@@ -867,7 +867,7 @@ For example:
 ```sh
 gnuplot -p qosc_plot.gp
 ```
-This command will run the `qosc_plot.gp` script and keep the plot window open for viewing.
+This command will run the [`qosc_plot.gp`](qosc_plot.gp) script and keep the plot window open for viewing.
 
 ## You: 
 
