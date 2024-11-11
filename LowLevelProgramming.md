@@ -55,7 +55,7 @@ Translate this program into C.
 
 ## ChatGPT: 
 
-*Quadrature Oscillator C*
+*[Quadrature Oscillator C](quadrature_oscillator.c)*
 
 I've translated the assembly code into C, keeping the quadrature oscillator's functionality intact.
 Let me know if you need further adjustments or explanations about the code.
@@ -618,7 +618,7 @@ Ok, based on this tidbit, analyze the entire assembly code and write it in both 
 
 ## ChatGPT: 
 
-*Edited Quadrature Oscillator C*
+*Edited [Quadrature Oscillator C](quadrature_oscillator.c)*
 
 I've updated the C code and added detailed mathematical notation to reflect the correct interpretation of the `sqs` (square and subtract) operation.  
 Let me know if you need further clarification or additional modifications.
@@ -630,7 +630,7 @@ Look closer.
 
 ## ChatGPT: 
 
-*Edited Quadrature Oscillator C*
+*Edited [Quadrature Oscillator C](quadrature_oscillator.c)*
 
 I've updated the code and mathematical notation to reflect the correct behavior, where `AC3` is initialized with the square of the real part and then the square of the imaginary part is subtracted.
 Let me know if there's anything else you'd like me to adjust.
@@ -646,7 +646,7 @@ Stuff All About, Anyhow?
 
 ## ChatGPT: 
 
-*Edited Quadrature Oscillator C*
+*Edited [Quadrature Oscillator C](quadrature_oscillator.c)*
 
 I've updated the code to correctly reflect the use of the target power (`AC3`) and its effect on the subsequent operations.  
 Let me know if this better matches your understanding or if further adjustments are needed.
@@ -657,7 +657,7 @@ same in python, with a test environment, maybe?
 
 ## ChatGPT: 
 
-*Quadrature Oscillator Python*
+*[Quadrature Oscillator Python](quadrature_oscillator.py)*
 
 I've translated the C code into Python and provided a simple test environment for you to run.
 Let me know if you need any further modifications or explanations!
@@ -668,7 +668,7 @@ Set the coefficients such that a rotation by 12 degrees results.
 
 ## ChatGPT: 
 
-*Edited Quadrature Oscillator Python*
+*Edited [Quadrature Oscillator Python](quadrature_oscillator.py)*
 
 I've updated the code to set the coefficients for a 12-degree rotation. The cosine and sine values are converted to Q15 format to achieve the desired rotation.
 Let me know if there's anything else you'd like to adjust.
@@ -679,7 +679,7 @@ Set the initial oscillator values such that the power matches the target power (
 
 ## ChatGPT: 
 
-*Edited Quadrature Oscillator Python*
+*Edited [Quadrature Oscillator Python](quadrature_oscillator.py)*
 
 I've adjusted the initial accumulator values to match the target power, ensuring the power consistency throughout the oscillator's operation.
 Let me know if this meets your requirements or if you need further modifications.
@@ -690,7 +690,7 @@ run for 1000 iterations and plot the results.
 
 ## ChatGPT: 
 
-*Edited Quadrature Oscillator Python*
+*Edited [Quadrature Oscillator Python](quadrature_oscillator.py)*
 
 I've updated the code to run for 1000 iterations and plot the results for both the real and imaginary parts of the quadrature oscillator.
 Let me know if you need any further changes or analyses!
@@ -701,7 +701,7 @@ rewrite both the C and python programs such that one iteration is packed into a 
 
 ## ChatGPT: 
 
-*Edited Quadrature Oscillator C*
+*Edited [Quadrature Oscillator C](quadrature_oscillator.potpourri)*
 
 I've updated both the C and Python programs to encapsulate one iteration into a separate function.  
 Let me know if you need any more changes or explanations!
@@ -1021,7 +1021,7 @@ If you can, also provide a version of the mathematical notation in fancier, TeX-
 
 ## ChatGPT: 
 
-*Edited Quadrature Oscillator C*
+*Edited [Quadrature Oscillator C](quadrature_oscillator.potpourri)*
 
 I've updated both the C and Python programs to match the latest working version of the quadrature oscillator. Additionally, I revised the mathematical notation, including a more detailed version in LaTeX style for clarity. Let me know if you need further adjustments or explanations!
 
@@ -1032,7 +1032,7 @@ Please print out the C, python, and mathematical notation versions again.
 
 ## ChatGPT: 
 
-*Edited Quadrature Oscillator C*
+*Edited [Quadrature Oscillator C](quadrature_oscillator.potpourri)*
 
 I've printed out the updated C code, Python code, and the corresponding mathematical notation in both plain and TeX styles.
 Let me know if you need any further clarifications or edits!
