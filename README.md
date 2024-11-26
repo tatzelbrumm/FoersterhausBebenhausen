@@ -98,3 +98,15 @@ Musings on testing of metal and biological objects
 * [quadrature_oscillator_sync.vhdl](./quadrature_oscillator_sync.vhdl)
 * [quadrature_oscillator_sync_tb.vhdl](./quadrature_oscillator_sync_tb.vhdl)
 
+### Tiny Tapeout
+
+#### IEEE Columbus OH SSCS/CAS Tiny Tapeout workshop
+
+* [IEEE Columbus OH SSCS/CAS Tiny Tapeout workshop announcement](https://r2.ieee.org/columbus-ssccas/blog/2024/01/14/tiny-tapeout-workshop-announcement/)
+* [Fork of tt09 7-segment clock workshop by Sam Ellicott](https://github.com/tatzelbrumm/tt09_7seg_clock_2024nov05)
+* tapeout ready design [layout](https://gds-viewer.tinytapeout.com/?model=https%3A%2F%2Ftatzelbrumm.github.io%2Ftt09_7seg_clock_2024nov05%2F%2Ftinytapeout.gds.gltf)
+
+#### Quadrature oscillator for Tiny Tapeout 09
+
+* Repository [tt09-qosc](https://github.com/tatzelbrumm/tt09-qosc)
+* tapeout ready design [layout](https://gds-viewer.tinytapeout.com/?model=https%3A%2F%2Ftatzelbrumm.github.io%2Ftt09-qosc%2F%2Ftinytapeout.gds.gltf)
