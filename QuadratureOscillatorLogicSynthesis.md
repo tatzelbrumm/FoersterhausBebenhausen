@@ -30,39 +30,39 @@ The C code defines a function called `qosc` that generates the trajectory of a q
  
 1. **Initialization** :
 
-$$\rm{accu\_re} = \rm{accu}[0], \quad \rm{accu\_im} = \rm{accu}[1]$$
+$$\rm{accu\_{re}} = \rm{accu}[0], \quad \rm{accu\_{im}} = \rm{accu}[1]$$
  
 2. **Iteration** :  
 For each iteration $$i$$ from 0 to $$n_1$$:  
     - **Store Current Accumulator Values** :  
-    $$\rm{result}[0][i] = \rm{accu\_re}, \quad \rm{result}[1][i] = \rm{accu\_im}$$
+    $$\rm{result}[0][i] = \rm{accu\_{re}}, \quad \rm{result}[1][i] = \rm{accu\_{im}}$$
  
     - **Calculate Next Real and Imaginary Components** :  
     Using the coefficients:
-    $$\rm{temp\_re} = \rm{accu\_re} \cdot c_1 - \rm{accu\_im} \cdot c_2$$
+    $$\rm{temp\_{re}} = \rm{accu\_{re}} \cdot c_1 - \rm{accu\_{im}} \cdot c_2$$
 
-    $$\rm{temp\_im} = \rm{accu\_re} \cdot c_2 + \rm{accu\_im} \cdot c_1$$
+    $$\rm{temp\_{im}} = \rm{accu\_{re}} \cdot c_2 + \rm{accu\_{im}} \cdot c_1$$
  
     - **Scale the Result** :  
     Shift down to maintain fixed-point precision:
-    $$\rm{tmph\_re} = \frac{\rm{temp\_re}}{2^{15}}, \quad \rm{tmph\_im} = \frac{\rm{temp\_im}}{2^{15}}$$
+    $$\rm{tmph\_{re}} = \frac{\rm{temp\_{re}}}{2^{15}}, \quad \rm{tmph\_{im}} = \frac{\rm{temp\_{im}}}{2^{15}}$$
  
     - **Power Adjustment** :  
     Compute an adjustment based on the power target:
-    $$\rm{ac3} = c_0 \cdot 2^{16} - (\rm{tmph\_re}^2 + \rm{tmph\_im}^2)$$
+    $$\rm{ac3} = c_0 \cdot 2^{16} - (\rm{tmph\_{re}}^2 + \rm{tmph\_{im}}^2)$$
 
     Extract and use the adjustment factor:  
     $$t_0 = \frac{\rm{ac3}}{2^{16}}$$
  
     - **Apply Power Correction** :  
     Adjust the next real and imaginary values with this factor:
-    $$\rm{temp\_re} += \rm{tmph\_re} \cdot t_0$$
+    $$\rm{temp\_{re}} += \rm{tmph\_{re}} \cdot t_0$$
 
-    $$\rm{temp\_im} += \rm{tmph\_im} \cdot t_0$$
+    $$\rm{temp\_{im}} += \rm{tmph\_{im}} \cdot t_0$$
  
     - **Update Accumulator** :  
     Set the accumulator values for the next iteration:  
-    $$\rm{accu\_re} = \frac{\rm{temp\_re}}{2^{15}}, \quad \rm{accu\_im} = \frac{\rm{temp\_im}}{2^{15}}$$
+    $$\rm{accu\_{re}} = \frac{\rm{temp\_{re}}}{2^{15}}, \quad \rm{accu\_{im}} = \frac{\rm{temp\_{im}}}{2^{15}}$$
  
 3. **Final Output** :  
 The function fills `result` with the oscillating real and imaginary values for each iteration, adjusting each by the target power to maintain a stable amplitude over time.
@@ -84,16 +84,16 @@ The squared amplitude of a sinusoidal signal is proportional to the power. Hereâ
  
 1. **Target Power Level** :  
 The variable `ac3` is calculated as:
-$$\rm{ac3} = c_0 \cdot 2^{16} - (\rm{tmph\_re}^2 + \rm{tmph\_im}^2)$$  
-where $$\rm{tmph\_re}$$ and $$\rm{tmph\_im}$$ are scaled values of the real and imaginary parts of the signal, respectively.
+$$\rm{ac3} = c_0 \cdot 2^{16} - (\rm{tmph\_{re}}^2 + \rm{tmph\_{im}}^2)$$  
+where $$\rm{tmph\_{re}}$$ and $$\rm{tmph\_{im}}$$ are scaled values of the real and imaginary parts of the signal, respectively.
  
 2. **Power Definition** :  
 The power of the oscillating signal can be approximated as the sum of the squares of the real and imaginary components. Thus, the target power level $$c_0$$ in the code represents the desired value of:
-$$c_0 \approx \frac{\rm{accu\_re}^2 + \rm{accu\_im}^2}{2^{16}}$$
+$$c_0 \approx \frac{\rm{accu\_{re}}^2 + \rm{accu\_{im}}^2}{2^{16}}$$
  
 3. **Relation Between $c_0$ and Amplitude $A$** :  
 For a sinusoidal signal with real and imaginary parts oscillating with the same peak amplitude $$A$$, we have:
-$$\rm{accu\_re}^2 + \rm{accu\_im}^2 = 2 A^2$$  
+$$\rm{accu\_{re}}^2 + \rm{accu\_{im}}^2 = 2 A^2$$  
 Substituting into the expression for $$c_0$$:
 $$c_0 = \frac{2 A^2}{2^{16}}$$  
 Rearranging, we find the peak amplitude $$A$$ in terms of $$c_0$$:  
