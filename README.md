@@ -71,3 +71,14 @@ Musings on testing of metal and biological objects
 ## Marvin sieht infrarot
 
 * [Oct 31, 2024 08-54-10 PM Gedichtanalyse und Inspiration.md](Oct%2031%2C%202024%2008-54-10%20PM%20Gedichtanalyse%20und%20Inspiration.md)
+
+## Low Level Programming
+
+[Quadrature oscillator in DSP assembler, C, and python](./LowLevelProgramming.md)
+
+![oscillator output](./qosc_output.svg)
+
+* [Nov 1, 2024 03-50-43 PM Conversation with ChatGPT.md](Nov%201%2C%202024%2003-50-43%20PM%20Conversation%20with%20ChatGPT.md)
+* [Nov 1, 2024 06-29-31 PM Assembly Quadrature Oscillator Explanation.md](Nov%201%2C%202024%2006-29-31%20PM%20Assembly%20Quadrature%20Oscillator%20Explanation.md)
+* [Nov 1, 2024 09-52-35 PM Conversation with ChatGPT.md](Nov%201%2C%202024%2009-52-35%20PM%20Conversation%20with%20ChatGPT.md)
+
