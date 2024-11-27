@@ -2857,7 +2857,7 @@ Passt das besser zu Ihrer Perspektive?
 
 ## You: ##
 
-Bin mir nicht so sicher, inwieweit die Geschäftsführung von den Förstern unter dem schlechten Eiunfluss von der Sorte ETH-Professoren stehen, mit denen sich schon Einstein rumärgern musste.
+Bin mir nicht so sicher, inwieweit die Geschäftsführung von den Förstern unter dem schlechten Einfluss von der Sorte ETH-Professoren stehen, mit denen sich schon Einstein rumärgern musste.
 
 ## ChatGPT: ##
 
