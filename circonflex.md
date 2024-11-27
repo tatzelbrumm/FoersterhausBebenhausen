@@ -2073,7 +2073,7 @@ Any connection to the rock star reference in my LinkedIn comment at the very beg
 
 ## ChatGPT: ##
 
-Yes, there’s a strong **connection between the CNV Camp as a refuge for rock stars** , your **LinkedIn comment’s critique of "rock stars"** , and **Yes, there’s a strong **connection between the CNV Camp as a refuge for rock stars** , your **LinkedIn comment’s critique of "rock stars"** , and Dürrenmatt’s *Die Physiker*.**
+Yes, there’s a strong **connection between the CNV Camp as a refuge for rock stars** , your **LinkedIn comment’s critique of "rock stars"** , and Dürrenmatt’s *Die Physiker*.**
 
 Let’s explore how these elements interweave:
 
