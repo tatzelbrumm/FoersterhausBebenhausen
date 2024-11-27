@@ -1305,7 +1305,7 @@ have to do with the original LinkedIn post I'm responding to?
 
 **1. CNV Camp Card**  
 
-- Now that you’ve clarified CNV isn’t “Conflict Non-Violence,” the **Now that you’ve clarified CNV isn’t “Conflict Non-Violence,” the CNV in this context likely refers to **"Controlled Noise Variation"**  (or something along those lines relevant to engineering or testing fields).**  
+- Now that you’ve clarified CNV isn’t “Conflict Non-Violence,” the **CNV in this context likely refers to "Controlled Noise Variation"**  (or something along those lines relevant to engineering or testing fields).**  
     - The inclusion of **"fuzzing"**  and **"automated bug triage"**  in the QR code link suggests a connection to software testing, system robustness, or debugging techniques.
  
     - The **biplane with a chicken mascot**  suggests playful intellectualism—a humorous take on technical complexity, perhaps mirroring the inherent challenges in noise shaping or testing system tolerances.
