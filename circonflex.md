@@ -1650,7 +1650,7 @@ Let’s break it down:
 
 ---
 
-** 1. *Die Physiker* Context:**  
+**1. *Die Physiker* Context:**  
 
 - **The Plot:**  Dürrenmatt’s play centers around three physicists in a mental institution—one of whom is a genius who pretends to be mad to protect humanity from his dangerous scientific discoveries.
  
